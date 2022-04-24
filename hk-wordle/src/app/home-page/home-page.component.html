@@ -1,0 +1,13 @@
+<h3 class="appHeader">Welcome to Hunter's Journle!</h3>
+<button (click)="openInstructions()">?</button>
+<div class="intro">
+    <div style="width: 50%; border: 2px solid green;">
+        <p style="text-align: center;">This is a game based on the popular game "Wordle".  If you would like to see the instructions for this game, then click <a (click)="openInstructions()" style="color: lightblue !important; cursor: pointer">here</a> or click the ? icon at the top.  Otherwise, continue on to start playing the game!</p>
+        <button routerLink="/game">
+            The Daily Puzzle
+        </button>
+        <button routerLink="/game">
+            Free Play
+        </button>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="modal-header bg-info" style="border-bottom: none;">
+    <h4 class="modal-title">Instructions</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body bg-info">
+    <p>Hunter's Journle is a guessing game based on Wordle.  What you have to guess is based on the Hunter's Journal from the game Hollow Knight.</p>
+    <p>There are 2 games modes for Hunter's Journle: </p>
+    <ul>
+        <li>
+            In the Daily Puzzle everyone will have the same entry.  A new journal entry will be selected at midnight every day.
+        </li>
+        <li>
+            In Free Play you can play as many times as you want.  You will have a different journal entry everytime!
+        </li>
+    </ul>
+    <h4 class="modal-title">The Rules</h4>
+    <p>In Hunter's Journle, you will have 5 guesses to correctly identify the entry selected from the Hunter's Journal.  You need to use clues from your previous guesses to help you identify what the entry is.  All entries from the journal have attributes that will help you solve the puzzle.</p>
+    <p>The attributes are as follows: </p>
+    <ul>
+        <li>
+            The area where they are from (eg City of Tears)
+        </li>
+        <li>
+            How much geo they are worth upon kill.  If the entry is a boss, then their geo value will be the value of the geo chest found after the boss fight.  For example, Watcher Knights would be worth 655 geo.  If there is no geo chest or an enemy does not drop geo, then the value will be 0
+        </li>
+        <li>
+            How many kills it takes to complete their entry in the Hunter's Journal (eg 15 kills)
+        </li>
+        <li>
+            How much health they have.  The health of each entry assumes the knight has the highest loadout and is in the overworld.  For example, Markoth normally has 250 health, but we are assuming the Knight has the fully upgraded nail so Markoth would have 705 health instead.
+        </li>
+    </ul>
+    <p>Use the colors and arrows you see on your guesses to help you get closer to figuring out the entry!  Guess an entry by typing in the search bar and using the autocomplete to select it.</p>
+    <h4 class="modal-title">Example</h4>
+    <p>Let's say today's entry is Watcher Knight's.  Then, a game of Hunter's Journle might look like the following:</p>
+</div>
