@@ -1,1 +1,39 @@
-<p>search-bar works!</p>
+<form class="example-form" >
+  <mat-form-field class="example-full-width" style="width: 100%">
+    <mat-chip-list #chipList>
+      <mat-chip style="margin-top:0.4em;" *ngFor="let option of  this.searchService.searchOption" (removed)="removeOption(option)">
+
+        <span>{{ option.name }}</span>
+
+        <mat-icon matChipRemove>cancel</mat-icon>
+      </mat-chip>
+      <input #autocompleteInput type="text" placeholder="Enter title" aria-label="Number" matInput [formControl]="myControl"
+        [matAutocomplete]="auto" [matChipInputFor]="chipList">
+      <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+        <mat-option style="border: 2px solid black; height: 125px;" *ngFor="let option of autoCompleteList" [value]="option" (onSelectionChange)="filterPostList($event)">
+          <h2 style="float: left; margin-top: 30px;"><strong>{{option.name}}</strong></h2>
+          <div style="float: left; height: 100px; width: 100%; border: 2px solid blue;">
+              <div class="option">
+                  <p>Area</p>
+                  <p>{{option.area}}</p>
+              </div>
+              <div class="option">
+                <p>Kills Required</p>
+                <p>{{option.kills}}</p>
+              </div>
+              <div class="option">
+                <p>Health</p>
+                <p>{{option.health}}</p>
+            </div>
+            <div class="option">
+              <p>Geo</p>
+              <p>{{option.geo}}</p>
+            </div>
+          </div>
+        </mat-option>
+      </mat-autocomplete>
+    </mat-chip-list>
+
+  </mat-form-field>
+
+  </form>

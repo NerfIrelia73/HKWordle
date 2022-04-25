@@ -1,0 +1,109 @@
+{
+    "entries": [
+        {
+            "name": "Crawlid",
+            "area": "Forgotten Crossroads",
+            "kills": 0,
+            "health": 8,
+            "geo": 2
+        },
+        {
+            "name": "Vengefly",
+            "area": "Forgotten Crossroads",
+            "kills": 45,
+            "health": 8,
+            "geo": 3
+        },
+        {
+            "name": "Vengefly King",
+            "area": "Forgotten Crossroads",
+            "kills": 2,
+            "health": 55,
+            "geo": 65
+        },
+        {
+            "name": "Gruzzer",
+            "area": "Forgotten Crossroads",
+            "kills": 25,
+            "health": 8,
+            "geo": 2
+        },
+        {
+            "name": "Gruz Mother",
+            "area": "Forgotten Crossroads",
+            "kills": 3,
+            "health": 90,
+            "geo": 50
+        },
+        {
+            "name": "Tiktik",
+            "area": "Forgotten Crossroads",
+            "kills": 30,
+            "health": 8,
+            "geo": 2
+        },
+        {
+            "name": "Shrumal Warrior",
+            "area": "Fungal Wastes",
+            "kills": 20,
+            "health": 20,
+            "geo": 8
+        },
+        {
+            "name": "Shrumal Ogre",
+            "area": "Fungal Wastes",
+            "kills": 8,
+            "health": 80,
+            "geo": 45
+        },
+        {
+            "name": "Mantis Youth",
+            "area": "Fungal Wastes",
+            "kills": 25,
+            "health": 15,
+            "geo": 5
+        },
+        {
+            "name": "Mantis Youth",
+            "area": "Fungal Wastes",
+            "kills": 25,
+            "health": 20,
+            "geo": 12
+        },
+        {
+            "name": "Gluttonous Husk",
+            "area": "City of Tears",
+            "kills": 25,
+            "health": 30,
+            "geo": 11
+        },
+        {
+            "name": "Great Husk Sentry",
+            "area": "City of Tears",
+            "kills": 10,
+            "health": 170,
+            "geo": 50
+        },
+        {
+            "name": "Watcher Knights",
+            "area": "City of Tears",
+            "kills": 1,
+            "health": 260,
+            "geo": 655
+        },
+        {
+            "name": "Flukefey",
+            "area": "Royal Waterways",
+            "kills": 15,
+            "health": 13,
+            "geo": 0
+        },
+        {
+            "name": "Flukemon",
+            "area": "Royal Waterways",
+            "kills": 20,
+            "health": 55,
+            "geo": 12
+        }
+    ]
+}
