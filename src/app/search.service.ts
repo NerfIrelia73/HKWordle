@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Post } from './post';
-import {HttpClient} from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import entries from "../assets/entries.json";
 

@@ -9,6 +9,8 @@ import { MatInputModule } from '@angular/material/input'
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
 import { MatChipsModule } from '@angular/material/chips'
 import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatDividerModule } from '@angular/material/divider'
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -41,6 +43,8 @@ import { SearchService } from './search.service';
     MatChipsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatDividerModule,
+    MatGridListModule,
     RouterModule.forRoot([
       {path: '', component: HomePageComponent},
       {path: 'game', component: GameComponent},

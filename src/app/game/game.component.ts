@@ -11,28 +11,25 @@ export class GameComponent implements OnInit {
 
   gameMode = 0
   post: Post[] = []
+  answer: Post = {name: "", area: "", kills: 0, health: 0, geo: 0}
   constructor(
     private searchService: SearchService
   ) { }
 
   ngOnInit() {
     this.searchService.getPosts().subscribe((posts: Post[]) => {
-      this.post = posts
       this.searchService.dataEntries = posts
+      this.answer = posts[Math.floor(Math.random() * posts.length)]
+      console.log(this.answer)
     });
   }
 
   onSelectedOption(e: any) {
-    this.getFilteredExpenseList();
-  }
-
-  getFilteredExpenseList() {
-    if (this.searchService.searchOption.length > 0)
-      this.post = this.searchService.filteredListOptions();
-    else {
-      this.post = this.searchService.dataEntries;
+    console.log("This is E")
+    console.log(e)
+    this.post = e
+    if (e.includes(this.answer)) {
+      console.log("You win!")
     }
-
-    console.log(this.post)
   }
 }

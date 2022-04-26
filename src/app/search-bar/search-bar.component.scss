@@ -1,11 +1,10 @@
 .option {
     width: 25%;
     float: left;
+    overflow: wrap;
 }
 
 .option > p {
     text-align: center;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
+    margin-top: -15px;
 }
