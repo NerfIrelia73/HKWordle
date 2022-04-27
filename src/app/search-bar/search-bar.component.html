@@ -3,27 +3,30 @@
     <mat-chip-list #chipList>
       <input #autocompleteInput type="text" placeholder="Search Entry" aria-label="Number" matInput [formControl]="myControl"
         [matAutocomplete]="auto" [matChipInputFor]="chipList">
-      <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
-        <mat-option style="border: 2px solid black; border-bottom: none; height: 125px;" *ngFor="let option of autoCompleteList" [value]="option" (onSelectionChange)="filterPostList($event)">
-          <div style="float: left; margin-top: 20px;">
-            <p><strong>{{option.name}}</strong></p>
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of autoCompleteList" [value]="option" (onSelectionChange)="filterPostList($event)" style="height: 140px; line-height: normal; border: 1px solid black; border-bottom: none; border-right: none; padding: 0px;">
+          <div style="width: 100%; border-bottom: 1px solid grey; margin-bottom: 5px;">
+            <span style="margin-left: 10px;"><strong>{{ option.name }}</strong></span><br>
           </div>
-          <div style="float: left; height: 100px; width: 100%; margin-top: -20px;">
-              <div class="option">
-                <p style="font-size: 14px;">Area</p>
-                <p style="margin-top: -35px;">{{option.area}}</p>
-              </div>
-              <div class="option">
-                <p style="font-size: 14px;">Kills Required</p>
-                <p style="margin-top: -35px;">{{option.kills}}</p>
-              </div>
-              <div class="option">
-                <p style="font-size: 14px;">Health</p>
-                <p style="margin-top: -35px;">{{option.health}}</p>
+          <div style="display: flex; justify-content: center;">
+            <div style="width: 20%; display: flex; justify-content: center;">
+              <img aria-hidden src="../../assets/entry-images/4Mommy.jpg" height="75" />
             </div>
             <div class="option">
-              <p style="font-size: 14px;">Geo</p>
-              <p style="margin-top: -35px;">{{option.geo}}</p>
+              <span><strong>Area</strong></span><br>
+              <span class="infoSpan">{{ option.area }}</span>
+            </div>
+            <div class="option">
+              <span><strong>Kills</strong></span><br>
+              <span class="infoSpan">{{ option.kills }}</span>
+            </div>
+            <div class="option">
+              <span><strong>Health</strong></span><br>
+              <span class="infoSpan">{{ option.health }}</span>
+            </div>
+            <div class="option">
+              <span><strong>Geo</strong></span><br>
+              <span class="infoSpan">{{ option.geo }}</span>
             </div>
           </div>
         </mat-option>

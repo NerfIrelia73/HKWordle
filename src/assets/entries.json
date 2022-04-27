@@ -5,105 +5,120 @@
             "area": "Forgotten Crossroads",
             "kills": 0,
             "health": 8,
-            "geo": 2
+            "geo": 2,
+            "order": -1
         },
         {
             "name": "Vengefly",
             "area": "Forgotten Crossroads",
             "kills": 45,
             "health": 8,
-            "geo": 3
+            "geo": 3,
+            "order": -1
         },
         {
             "name": "Vengefly King",
             "area": "Forgotten Crossroads",
             "kills": 2,
             "health": 55,
-            "geo": 65
+            "geo": 65,
+            "order": -1
         },
         {
             "name": "Gruzzer",
             "area": "Forgotten Crossroads",
             "kills": 25,
             "health": 8,
-            "geo": 2
+            "geo": 2,
+            "order": -1
         },
         {
             "name": "Gruz Mother",
             "area": "Forgotten Crossroads",
             "kills": 3,
             "health": 90,
-            "geo": 50
+            "geo": 50,
+            "order": -1
         },
         {
             "name": "Tiktik",
             "area": "Forgotten Crossroads",
             "kills": 30,
             "health": 8,
-            "geo": 2
+            "geo": 2,
+            "order": -1
         },
         {
             "name": "Shrumal Warrior",
             "area": "Fungal Wastes",
             "kills": 20,
             "health": 20,
-            "geo": 8
+            "geo": 8,
+            "order": -1
         },
         {
             "name": "Shrumal Ogre",
             "area": "Fungal Wastes",
             "kills": 8,
             "health": 80,
-            "geo": 45
+            "geo": 45,
+            "order": -1
         },
         {
             "name": "Mantis Youth",
             "area": "Fungal Wastes",
             "kills": 25,
             "health": 15,
-            "geo": 5
+            "geo": 5,
+            "order": -1
         },
         {
             "name": "Mantis Youth",
             "area": "Fungal Wastes",
             "kills": 25,
             "health": 20,
-            "geo": 12
+            "geo": 12,
+            "order": -1
         },
         {
             "name": "Gluttonous Husk",
             "area": "City of Tears",
             "kills": 25,
             "health": 30,
-            "geo": 11
+            "geo": 11,
+            "order": -1
         },
         {
             "name": "Great Husk Sentry",
             "area": "City of Tears",
             "kills": 10,
             "health": 170,
-            "geo": 50
+            "geo": 50,
+            "order": -1
         },
         {
             "name": "Watcher Knights",
             "area": "City of Tears",
             "kills": 1,
             "health": 260,
-            "geo": 655
+            "geo": 655,
+            "order": -1
         },
         {
             "name": "Flukefey",
             "area": "Royal Waterways",
             "kills": 15,
             "health": 13,
-            "geo": 0
+            "geo": 0,
+            "order": -1
         },
         {
             "name": "Flukemon",
             "area": "Royal Waterways",
             "kills": 20,
             "health": 55,
-            "geo": 12
+            "geo": 12,
+            "order": -1
         }
     ]
 }

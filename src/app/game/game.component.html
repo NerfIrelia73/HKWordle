@@ -1,44 +1,35 @@
 <h3 style="color: white; text-align: center; margin-bottom: 100px;">{{gameMode === 0 ? 'The Daily Puzzle' : 'Free Play'}}</h3>
 <div style="display: flex; justify-content: center; width: 100%;">
     <div style="color: black; margin-right: 25px; width: 35%; display: block;">
-        <mat-grid-list style="color: black; margin-bottom: 20px;" *ngFor="let option of post" cols="4" rowHeight="48px">
-            <mat-grid-tile
-            [colspan]="4"
-            [rowspan]="1"
-            [ngStyle]="{'background-color': option.name == answer.name ? 'green' : 'grey'}">
-            <h1 style="font-size: 18px; float: left;">{{ option.name }}</h1>
-            </mat-grid-tile>
-            <mat-grid-tile
-                [colspan]="1"
-                [rowspan]="1"
-                [ngStyle]="{'background-color': option.area == answer.area ? 'green' : 'red'}">
-                <mat-grid-tile-header style="display: block; text-align: center; color: black;">Area</mat-grid-tile-header>
-                <p style="margin-top: 27px;">{{ option.area }}</p>
-            </mat-grid-tile>
-            <mat-grid-tile
-                [colspan]="1"
-                [rowspan]="1"
-                [ngStyle]="{'background-color': option.kills == answer.kills ? 'green' : 'red'}">
-                <mat-grid-tile-header style="display: block; text-align: center; color: black;">Kills</mat-grid-tile-header>
-                <p style="margin-top: 27px;">{{ option.kills }}</p>
-            </mat-grid-tile>
-            <mat-grid-tile
-                [colspan]="1"
-                [rowspan]="1"
-                [ngStyle]="{'background-color': option.health == answer.health ? 'green' : 'red'}">
-                <mat-grid-tile-header style="display: block; text-align: center; color: black;">Health</mat-grid-tile-header>
-                <p style="margin-top: 27px;">{{ option.health }}</p>
-            </mat-grid-tile>
-            <mat-grid-tile
-                [colspan]="1"
-                [rowspan]="1"
-                [ngStyle]="{'background-color': option.geo == answer.geo ? 'green' : 'red'}">
-                <mat-grid-tile-header style="display: block; text-align: center; color: black;">Geo</mat-grid-tile-header>
-                <p style="margin-top: 27px;">{{ option.geo }}</p>
-            </mat-grid-tile>
-        </mat-grid-list>
+        <div *ngFor="let option of post" style="height: 107px; line-height: normal; border: 1px solid black; padding: 0px; margin-bottom: 20px;">
+            <div style="width: 100%; border-bottom: 1px solid grey;" [ngStyle]="{'background-color': option.name == answer.name ? 'green' : 'grey'}">
+              <span style="margin-left: 10px;"><strong>{{ option.name }}</strong></span><br>
+            </div>
+            <div style="display: flex; justify-content: center;">
+              <div style="width: 20%; display: flex; justify-content: center;">
+                <img style="vertical-align: middle;" aria-hidden src="../../assets/entry-images/4Mommy.jpg" height="85" />
+              </div>
+              <div class="option" [ngStyle]="{'background-color': option.area == answer.area ? 'green' : 'red'}">
+                <span><strong>Area</strong></span><br>
+                <span class="infoSpan">{{ option.area }}</span>
+              </div>
+              <div class="option" [ngStyle]="{'background-color': option.kills == answer.kills ? 'green' : 'red'}">
+                <span><strong>Kills</strong></span><br>
+                <span class="infoSpan">{{ option.kills }}</span>
+              </div>
+              <div class="option" [ngStyle]="{'background-color': option.health == answer.health ? 'green' : 'red'}">
+                <span><strong>Health</strong></span><br>
+                <span class="infoSpan">{{ option.health }}</span>
+              </div>
+              <div class="option" [ngStyle]="{'background-color': option.geo == answer.geo ? 'green' : 'red'}">
+                <span><strong>Geo</strong></span><br>
+                <span class="infoSpan">{{ option.geo }}</span>
+              </div>
+            </div>
+        </div>
     </div>
     <div style="margin-left: 25px; width: 35%;">
         <app-search-bar (onSelectedOption)="onSelectedOption($event)"></app-search-bar>
     </div>
+    <button (click)="openEndScreen()">CLICK ME TO WIN</button>
 </div>

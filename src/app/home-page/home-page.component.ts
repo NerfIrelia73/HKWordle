@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { InstructionsComponent } from '../instructions/instructions.component';
+import { InstructionsComponent } from '../modals/instructions/instructions.component';
 
 @Component({
   selector: 'app-home-page',

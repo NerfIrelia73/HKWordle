@@ -3,5 +3,6 @@ export interface Post {
     area: string,
     kills: number,
     health: number,
-    geo: number
+    geo: number,
+    order: number
 }

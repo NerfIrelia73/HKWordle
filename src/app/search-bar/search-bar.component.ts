@@ -1,6 +1,5 @@
 import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms'
-import { Observable } from 'rxjs';
 import { SearchService } from '../search.service';
 import { Post } from '../post'
 
@@ -13,6 +12,7 @@ export class SearchBarComponent implements OnInit {
   myControl = new FormControl();
   allPosts: Post[] = [];
   autoCompleteList: any[] = []
+  counter = 0
 
   @ViewChild('autocompleteInput')
   autocompleteInput!: ElementRef;
@@ -56,22 +56,22 @@ export class SearchBarComponent implements OnInit {
     return k;
   }
 
-  filterPostList(event: { source: { value: any; }; }) {
-    var posts= event.source.value;
+  filterPostList(event: any) {
+    let posts = event.source.value;
+    this.counter++
+    posts.order = this.counter
+      console.log("event")
+      console.log(event)
         if(!posts) {
           this.searchService.searchOption=[]
         }
         else {
-          console.log("not")
-
-            this.searchService.searchOption.push(posts);
-            this.onSelectedOption.emit(this.searchService.searchOption)
+          this.searchService.searchOption.push(posts);
+          this.allPosts = this.allPosts.filter(function(el) { return el.name != posts.name; });
+          this.onSelectedOption.emit(this.searchService.searchOption)
         }
 
         this.focusOnPlaceInput();
-
-
-
   }
 
 

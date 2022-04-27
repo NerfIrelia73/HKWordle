@@ -1,11 +1,17 @@
 .option {
-    width: 25%;
-    float: left;
+    width: 20%;
+    text-align: center;
 }
 
 .option > p {
     text-align: center;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
+    margin-top: -15px;
+}
+
+.infoSpan {
+    display: block;
+    white-space: normal;
+    width: 100%;
+    word-wrap: break-word;
+    margin-top: 15px;
 }
