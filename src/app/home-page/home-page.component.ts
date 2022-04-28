@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { InstructionsComponent } from '../modals/instructions/instructions.component';
+import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home-page',
@@ -10,6 +11,8 @@ import { InstructionsComponent } from '../modals/instructions/instructions.compo
 export class HomePageComponent implements OnInit {
 
   constructor(private modalService: NgbModal) { }
+
+  faQuestionCircle = faQuestionCircle
 
   ngOnInit(): void {
   }

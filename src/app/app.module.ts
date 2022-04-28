@@ -17,7 +17,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { fas, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { fas, faQuestionCircle, faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { InstructionsComponent } from './modals/instructions/instructions.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GameComponent } from './game/game.component';
@@ -62,6 +62,6 @@ import { EndScreenComponent } from './modals/end-screen/end-screen.component';
 export class AppModule {
   constructor(library: FaIconLibrary) {
     library.addIconPacks(fas);
-    library.addIcons(faCoffee);
+    library.addIcons(faArrowDown, faArrowUp, faQuestionCircle);
   }
 }

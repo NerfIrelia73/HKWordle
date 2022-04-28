@@ -3,6 +3,7 @@ import { Post } from '../post';
 import { SearchService } from '../search.service';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { EndScreenComponent } from '../modals/end-screen/end-screen.component';
+import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-game',
@@ -12,6 +13,8 @@ import { EndScreenComponent } from '../modals/end-screen/end-screen.component';
 export class GameComponent implements OnInit {
 
   gameMode = 0
+  faArrowDown = faArrowDown
+  faArrowUp = faArrowUp
   post: Post[] = []
   answer: Post = {name: "", area: "", kills: 0, health: 0, geo: 0, order: -1}
   constructor(

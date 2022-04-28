@@ -15,15 +15,15 @@
               </div>
               <div class="option" [ngStyle]="{'background-color': option.kills == answer.kills ? 'green' : 'red'}">
                 <span><strong>Kills</strong></span><br>
-                <span class="infoSpan">{{ option.kills }}</span>
+                <span class="infoSpan"><fa-icon *ngIf="option.kills != answer.kills" style="color: white; margin-right: 15px;" [icon]="option.kills < answer.kills ? faArrowUp : faArrowDown"></fa-icon>{{ option.kills }}</span>
               </div>
               <div class="option" [ngStyle]="{'background-color': option.health == answer.health ? 'green' : 'red'}">
                 <span><strong>Health</strong></span><br>
-                <span class="infoSpan">{{ option.health }}</span>
+                <span class="infoSpan"><fa-icon *ngIf="option.health != answer.health" style="color: white; margin-right: 15px;" [icon]="option.health < answer.health ? faArrowUp : faArrowDown"></fa-icon>{{ option.health }}</span>
               </div>
               <div class="option" [ngStyle]="{'background-color': option.geo == answer.geo ? 'green' : 'red'}">
                 <span><strong>Geo</strong></span><br>
-                <span class="infoSpan">{{ option.geo }}</span>
+                <span class="infoSpan"><fa-icon *ngIf="option.geo != answer.geo" style="color: white; margin-right: 15px;" [icon]="option.geo < answer.geo ? faArrowUp : faArrowDown"></fa-icon>{{ option.geo }}</span>
               </div>
             </div>
         </div>

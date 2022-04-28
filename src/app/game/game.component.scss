@@ -9,7 +9,8 @@
 }
 
 .infoSpan {
-    display: block;
+    display: flex;
+    justify-content: center;
     white-space: normal;
     width: 100%;
     word-wrap: break-word;
