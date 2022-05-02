@@ -1,0 +1,31 @@
+.nav {
+    width: 100%;
+    height: 75px;
+    margin-bottom: 80px;
+    border-bottom: 2px solid purple;
+    background: black;
+}
+
+.tabs {
+    background: black;
+    color: white;
+    margin-top: 12px;
+    margin-left: 12px;
+    height: 50px;
+}
+
+.mat-tab-label {
+    min-width: 25px !important;
+    margin-right: 10px;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+}
+
+.mat-tab-label.mat-tab-label-active {
+    min-width: 25px !important;
+    margin-right: 10px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-weight: 700;
+}

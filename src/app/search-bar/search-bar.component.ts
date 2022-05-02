@@ -40,7 +40,6 @@ export class SearchBarComponent implements OnInit {
   }
 
   filterCategoryList(val: string | null) {
-    var categoryList = []
     if (typeof val != "string") {
       return [];
     }

@@ -1,4 +1,11 @@
-<h3 style="color: white; text-align: center; margin-bottom: 100px;">{{gameMode === 0 ? 'The Daily Puzzle' : 'Free Play'}}</h3>
+<app-top-navbar (newModeEvent)="changeMode($event)"></app-top-navbar>
+<div style="display: flex; justify-content: center;">
+  <h3 class="gameTitle">{{ gameMode }}</h3>
+  <fa-icon class="question" (click)="openInst()" [icon]="faQuestionCircle"></fa-icon>
+</div>
+<div style="display: flex; justify-content: center;">
+  <button *ngIf="gameMode == 'Free Play' && won" (click)="changeMode('Free Play')">Play Again</button>
+</div>
 <div style="display: flex; justify-content: center; width: 100%;">
     <div style="color: black; margin-right: 25px; width: 35%; display: block;">
         <div *ngFor="let option of post" style="height: 107px; line-height: normal; border: 1px solid black; padding: 0px; margin-bottom: 20px;">
@@ -31,5 +38,4 @@
     <div style="margin-left: 25px; width: 35%;">
         <app-search-bar (onSelectedOption)="onSelectedOption($event)"></app-search-bar>
     </div>
-    <button (click)="openEndScreen()">CLICK ME TO WIN</button>
 </div>

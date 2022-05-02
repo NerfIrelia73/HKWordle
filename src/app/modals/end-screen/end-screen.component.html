@@ -1,16 +1,17 @@
 <div class="modal-header bg-info" style="border-bottom: none;">
-    <h4 class="modal-title">You found the correct Entry!</h4>
+    <h4 class="modal-title">{{ won ? 'You found the correct entry!' : 'You were unable to find the correct entry' }}</h4>
     <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
 <div class="modal-body bg-info">
-    <p>It took you <strong>{{guesses.length}}</strong> guesses to find <strong>{{ guesses[0].name }}</strong></p>
+    <p *ngIf="won">It took you <strong>{{guesses.length}}</strong> guesses to find <strong>{{ answer.name }}</strong></p>
+    <p *ngIf="!won">The answer was <strong>{{ answer.name }}</strong></p>
     <div class="modal-body bg-info" style="display: flex; justify-content: center;">
         <img style="vertical-align: middle;" aria-hidden src="../../assets/entry-images/4Mommy.jpg"/>
     </div>
     <div class="modal-body bg-info">
-        <button style="float: left; margin-right: 20px; margin-left: -15px;" type="button" class="close" (click)="copyToClipboard()">
+        <button *ngIf="mode == 'The Daily Puzzle'" style="float: left; margin-right: 20px; margin-left: -15px;" type="button" class="close" (click)="copyToClipboard()">
             <span aria-hidden="true">Share</span>
         </button>
         <button style="float: left;" type="button" class="close" (click)="activeModal.dismiss('Cross click')">

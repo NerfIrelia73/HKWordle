@@ -12,7 +12,7 @@ import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatDividerModule } from '@angular/material/divider'
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSelectModule } from '@angular/material/select';
-import {MatTooltipModule} from '@angular/material/tooltip';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -24,6 +24,8 @@ import { GameComponent } from './game/game.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { SearchService } from './search.service';
 import { EndScreenComponent } from './modals/end-screen/end-screen.component';
+import { CopiedComponent } from './modals/copied/copied.component';
+import { TopNavbarComponent } from './top-navbar/top-navbar.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { EndScreenComponent } from './modals/end-screen/end-screen.component';
     InstructionsComponent,
     GameComponent,
     SearchBarComponent,
-    EndScreenComponent
+    EndScreenComponent,
+    CopiedComponent,
+    TopNavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +54,7 @@ import { EndScreenComponent } from './modals/end-screen/end-screen.component';
     MatDividerModule,
     MatGridListModule,
     MatSelectModule,
-    MatTooltipModule,
+    MatTabsModule,
     RouterModule.forRoot([
       {path: '', component: HomePageComponent},
       {path: 'game', component: GameComponent},
