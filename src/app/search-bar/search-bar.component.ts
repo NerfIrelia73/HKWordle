@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms'
 import { SearchService } from '../search.service';
 import { Post } from '../post'
@@ -9,14 +9,16 @@ import { Post } from '../post'
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
-  myControl = new FormControl();
-  allPosts: Post[] = [];
+  myControl = new FormControl()
+  dailyPosts: Post[] = []
   autoCompleteList: any[] = []
   counter = 0
 
   @ViewChild('autocompleteInput')
   autocompleteInput!: ElementRef;
   @Output() onSelectedOption = new EventEmitter();
+  @Input() public wonGame: any
+  @Input() public listLength: any
 
   constructor(
     public searchService: SearchService
@@ -24,18 +26,25 @@ export class SearchBarComponent implements OnInit {
 
   ngOnInit() {
     this.searchService.getPosts().subscribe(posts => {
-      this.allPosts = posts
+      this.searchService.allPosts = posts
       console.log("This has gone")
-      console.log(this.allPosts)
     });
 
     this.myControl.valueChanges.subscribe(userInput => {
       this.autoCompleteExpenseList(userInput);
     })
+
+    if (localStorage.getItem("dailyArr") != null) {
+      this.dailyPosts = JSON.parse(localStorage.getItem("dailyArr") as string)
+      for (let option of this.dailyPosts) {
+        this.searchService.allPosts = this.searchService.allPosts.filter(function(el) { return el.name != option.name; });
+      }
+    }
   }
 
   private autoCompleteExpenseList(input: any) {
     let categoryList = this.filterCategoryList(input)
+    console.log(categoryList)
     this.autoCompleteList = categoryList;
   }
 
@@ -46,8 +55,8 @@ export class SearchBarComponent implements OnInit {
     if (val === '' || val === null) {
       return [];
     }
-    return val ? this.allPosts.filter(s => s.name.toLowerCase().indexOf(val.toLowerCase()) != -1)
-      : this.allPosts;
+    return val ? this.searchService.allPosts.filter(s => s.name.toLowerCase().indexOf(val.toLowerCase()) != -1)
+      : this.searchService.allPosts;
   }
 
   displayFn(post: Post) {
@@ -66,7 +75,7 @@ export class SearchBarComponent implements OnInit {
         }
         else {
           this.searchService.searchOption.push(posts);
-          this.allPosts = this.allPosts.filter(function(el) { return el.name != posts.name; });
+          this.searchService.allPosts = this.searchService.allPosts.filter(function(el) { return el.name != posts.name; });
           this.onSelectedOption.emit(this.searchService.searchOption)
         }
 
@@ -75,7 +84,6 @@ export class SearchBarComponent implements OnInit {
 
 
   removeOption(option: any) {
-
     let index = this.searchService.searchOption.indexOf(option);
     if (index >= 0)
         this.searchService.searchOption.splice(index, 1);

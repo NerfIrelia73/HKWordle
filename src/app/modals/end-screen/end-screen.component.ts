@@ -41,7 +41,7 @@ export class EndScreenComponent implements OnInit {
     if (this.won) {
       text = `I solved today's Hunter's Journle in ${this.guesses.length} guesses!\n\n`
     } else {
-      text = "I was unable to solve today's Hunter's Journel\n\n"
+      text = "I was unable to solve today's Hunter's Journle\n\n"
     }
     for (let i = this.guesses.length - 1; i >= 0; i--) {
       if (this.guesses[i].area == this.answer.area) {

@@ -17,6 +17,7 @@ export class GameComponent implements OnInit {
   faArrowDown = faArrowDown
   faArrowUp = faArrowUp
   faQuestionCircle = faQuestionCircle
+  resetPosts: Post[] = []
   won = false;
   post: Post[] = []
   answer: Post = {name: "", area: "", kills: 0, health: 0, geo: 0, order: -1}
@@ -27,6 +28,7 @@ export class GameComponent implements OnInit {
   ngOnInit() {
     this.searchService.getPosts().subscribe((posts: Post[]) => {
       this.searchService.dataEntries = posts
+      this.resetPosts = posts
       this.answer = getDailyAnswer()
       if (localStorage.getItem("dailyArr") != null) {
         this.post = JSON.parse(localStorage.getItem("dailyArr") as string)
@@ -52,17 +54,23 @@ export class GameComponent implements OnInit {
     this.gameMode = mode.tab.textLabel
     this.won = false
     if (mode.tab.textLabel == "The Daily Puzzle") {
+      this.answer = getDailyAnswer()
       if (localStorage.getItem("dailyArr") != null) {
         this.post = JSON.parse(localStorage.getItem("dailyArr") as string)
         this.checkVictory()
       } else {
         this.post = []
       }
-      this.answer = getDailyAnswer()
     } else if (mode.tab.textLabel == "Free Play") {
       this.answer = this.searchService.dataEntries[Math.floor(Math.random() * this.searchService.dataEntries.length)]
       this.post = []
     }
+    this.searchService.searchOption = this.post
+    this.searchService.allPosts = this.resetPosts
+    for (let option of this.post) {
+        this.searchService.allPosts = this.searchService.allPosts.filter(function(el) { return el.name != option.name; });
+    }
+    console.log(this.post)
   }
 
   checkVictory() {
@@ -81,6 +89,16 @@ export class GameComponent implements OnInit {
     } else if (this.post.length == 5) {
       openEndScreen(false, this.modalService, this.post, this.answer, this.gameMode)
     }
+  }
+
+  goAgain() {
+    this.answer = this.searchService.dataEntries[Math.floor(Math.random() * this.searchService.dataEntries.length)]
+    this.post = []
+    this.searchService.searchOption = this.post
+    this.searchService.allPosts = this.resetPosts
+    this.won = false
+    console.log("this is reset answer")
+    console.log(this.answer)
   }
 
   openInst() {

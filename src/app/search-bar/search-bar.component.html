@@ -2,7 +2,7 @@
   <mat-form-field class="example-full-width" style="width: 100%">
     <mat-chip-list #chipList>
       <input #autocompleteInput type="text" placeholder="Search Entry" aria-label="Number" matInput [formControl]="myControl"
-        [matAutocomplete]="auto" [matChipInputFor]="chipList">
+        [matAutocomplete]="auto" [matChipInputFor]="chipList" [disabled]="wonGame || (!wonGame && listLength == 5)">
       <mat-autocomplete #auto="matAutocomplete">
         <mat-option *ngFor="let option of autoCompleteList" [value]="option" (onSelectionChange)="filterPostList($event)" style="height: 140px; line-height: normal; border: 1px solid black; border-bottom: none; border-right: none; padding: 0px;">
           <div style="width: 100%; border-bottom: 1px solid grey; margin-bottom: 5px;">

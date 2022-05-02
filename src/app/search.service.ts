@@ -10,6 +10,7 @@ export class SearchService {
 
   searchOption: Post[] = []
   dataEntries: Post[] = []
+  allPosts: Post[] = []
 
   constructor() {
     this.dataEntries = entries.entries
@@ -20,20 +21,5 @@ export class SearchService {
     console.log(this.dataEntries)
     if (this.dataEntries.length > 0) {}
     return of(this.dataEntries)
-  }
-
-  filteredListOptions() {
-    console.log("We got here to filter")
-    let posts = this.dataEntries;
-        let filteredPostsList: Post[] = [];
-        for (let post of posts) {
-            for (let options of this.searchOption) {
-                if (options.name === post.name) {
-                  filteredPostsList.push(post);
-                }
-            }
-        }
-        console.log(filteredPostsList);
-        return filteredPostsList;
   }
 }
