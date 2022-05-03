@@ -13,6 +13,7 @@ import { MatDividerModule } from '@angular/material/divider'
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -55,6 +56,7 @@ import { TopNavbarComponent } from './top-navbar/top-navbar.component';
     MatGridListModule,
     MatSelectModule,
     MatTabsModule,
+    MatButtonModule,
     RouterModule.forRoot([
       {path: '', component: HomePageComponent},
       {path: 'game', component: GameComponent},

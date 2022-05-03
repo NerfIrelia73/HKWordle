@@ -49,6 +49,350 @@
             "order": -1
         },
         {
+            "name": "Aspid Hunter",
+            "area": "Forgotten Crossroads",
+            "kills": 20,
+            "health": 15,
+            "geo": 6,
+            "order": -1
+        },
+        {
+            "name": "Aspid Mother",
+            "area": "Forgotten Crossroads",
+            "kills": 15,
+            "health": 20,
+            "geo": 10,
+            "order": -1
+        },
+        {
+            "name": "Aspid Hatchling",
+            "area": "Forgotten Crossroads",
+            "kills": 30,
+            "health": 5,
+            "geo": 0,
+            "order": -1
+        },
+        {
+            "name": "Goam",
+            "area": "Forgotten Crossroads",
+            "kills": 0,
+            "health": 0,
+            "geo": 0,
+            "order": -1
+        },
+        {
+            "name": "Wandering Husk",
+            "area": "Forgotten Crossroads",
+            "kills": 35,
+            "health": 15,
+            "geo": 3,
+            "order": -1
+        },
+        {
+            "name": "Husk Hornhead",
+            "area": "Forgotten Crossroads",
+            "kills": 35,
+            "health": 15,
+            "geo": 4,
+            "order": -1
+        },
+        {
+            "name": "Leaping Husk",
+            "area": "Forgotten Crossroads",
+            "kills": 35,
+            "health": 15,
+            "geo": 3,
+            "order": -1
+        },
+        {
+            "name": "Husk Bully",
+            "area": "Forgotten Crossroads",
+            "kills": 35,
+            "health": 15,
+            "geo": 3,
+            "order": -1
+        },
+        {
+            "name": "Husk Warrior",
+            "area": "Forgotten Crossroads",
+            "kills": 10,
+            "health": 15,
+            "geo": 6,
+            "order": -1
+        },
+        {
+            "name": "Husk Guard",
+            "area": "Forgotten Crossroads",
+            "kills": 6,
+            "health": 70,
+            "geo": 45,
+            "order": -1
+        },
+        {
+            "name": "False Knight",
+            "area": "Forgotten Crossroads",
+            "kills": 1,
+            "health": 355,
+            "geo": 200,
+            "order": -1
+        },
+        {
+            "name": "Maggot",
+            "area": "Forgotten Crossroads",
+            "kills": 2,
+            "health": 1,
+            "geo": 2,
+            "order": -1
+        },
+        {
+            "name": "Menderbug",
+            "area": "Forgotten Crossroads",
+            "kills": 1,
+            "health": 1,
+            "geo": 0,
+            "order": -1
+        },
+        {
+            "name": "Lifeseed",
+            "area": "Multiple",
+            "kills": 10,
+            "health": 1,
+            "geo": 0,
+            "order": -1
+        },
+        {
+            "name": "Entombed Husk",
+            "area": "Resting Grounds",
+            "kills": 10,
+            "health": 45,
+            "geo": 15,
+            "order": -1
+        },
+        {
+            "name": "Baldur",
+            "area": "Greenpath",
+            "kills": 20,
+            "health": 15,
+            "geo": 4,
+            "order": -1
+        },
+        {
+            "name": "Elder Baldur",
+            "area": "Greenpath",
+            "kills": 1,
+            "health": 60,
+            "geo": 50,
+            "order": -1
+        },
+        {
+            "name": "Mosscreep",
+            "area": "Greenpath",
+            "kills": 30,
+            "health": 10,
+            "geo": 2,
+            "order": -1
+        },
+        {
+            "name": "Mossfly",
+            "area": "Greenpath",
+            "kills": 25,
+            "health": 15,
+            "geo": 2,
+            "order": -1
+        },
+        {
+            "name": "Mosskin",
+            "area": "Greenpath",
+            "kills": 25,
+            "health": 15,
+            "geo": 3,
+            "order": -1
+        },
+        {
+            "name": "Volatile Mosskin",
+            "area": "Greenpath",
+            "kills": 25,
+            "health": 15,
+            "geo": 5,
+            "order": -1
+        },
+        {
+            "name": "Fool Eater",
+            "area": "Greenpath",
+            "kills": 15,
+            "health": 16,
+            "geo": 9,
+            "order": -1
+        },
+        {
+            "name": "Squit",
+            "area": "Greenpath",
+            "kills": 25,
+            "health": 10,
+            "geo": 5,
+            "order": -1
+        },
+        {
+            "name": "Obble",
+            "area": "Greenpath",
+            "kills": 20,
+            "health": 10,
+            "geo": 4,
+            "order": -1
+        },
+        {
+            "name": "Gulka",
+            "area": "Greenpath",
+            "kills": 15,
+            "health": 10,
+            "geo": 6,
+            "order": -1
+        },
+        {
+            "name": "Maskfly",
+            "area": "Greenpath",
+            "kills": 15,
+            "health": 1,
+            "geo": 0,
+            "order": -1
+        },
+        {
+            "name": "Moss Charger",
+            "area": "Greenpath",
+            "kills": 15,
+            "health": 15,
+            "geo": 8,
+            "order": -1
+        },
+        {
+            "name": "Massive Moss Charger",
+            "area": "Greenpath",
+            "kills": 1,
+            "health": 100,
+            "geo": 300,
+            "order": -1
+        },
+        {
+            "name": "Moss Knight",
+            "area": "Greenpath",
+            "kills": 8,
+            "health": 50,
+            "geo": 40,
+            "order": -1
+        },
+        {
+            "name": "Mossy Vagabond",
+            "area": "Greenpath",
+            "kills": 10,
+            "health": 25,
+            "geo": 8,
+            "order": -1
+        },
+        {
+            "name": "Durandoo",
+            "area": "Greenpath",
+            "kills": 8,
+            "health": 30,
+            "geo": 6,
+            "order": -1
+        },
+        {
+            "name": "Duranda",
+            "area": "Greenpath",
+            "kills": 8,
+            "health": 30,
+            "geo": 4,
+            "order": -1
+        },
+        {
+            "name": "Aluba",
+            "area": "Greenpath",
+            "kills": 1,
+            "health": 1,
+            "geo": 0,
+            "order": -1
+        },
+        {
+            "name": "Charged Lumafly",
+            "area": "Fog Canyon",
+            "kills": 0,
+            "health": 0,
+            "geo": 0,
+            "order": -1
+        },
+        {
+            "name": "Uoma",
+            "area": "Fog Canyon",
+            "kills": 20,
+            "health": 1,
+            "geo": 0,
+            "order": -1
+        },
+        {
+            "name": "Ooma",
+            "area": "Fog Canyon",
+            "kills": 12,
+            "health": 1,
+            "geo": 5,
+            "order": -1
+        },
+        {
+            "name": "Uumuu",
+            "area": "Fog Canyon",
+            "kills": 1,
+            "health": 300,
+            "geo": 0,
+            "order": -1
+        },
+        {
+            "name": "Ambloom",
+            "area": "Fungal Wastes",
+            "kills": 15,
+            "health": 12,
+            "geo": 2,
+            "order": -1
+        },
+        {
+            "name": "Fungling",
+            "area": "Fungal Wastes",
+            "kills": 30,
+            "health": 10,
+            "geo": 2,
+            "order": -1
+        },
+        {
+            "name": "Fungoon",
+            "area": "Fungal Wastes",
+            "kills": 20,
+            "health": 15,
+            "geo": 6,
+            "order": -1
+        },
+        {
+            "name": "Sporg",
+            "area": "Fungal Wastes",
+            "kills": 20,
+            "health": 25,
+            "geo": 3,
+            "order": -1
+        },
+        {
+            "name": "Fungified Husk",
+            "area": "Fungal Wastes",
+            "kills": 10,
+            "health": 15,
+            "geo": 5,
+            "order": -1
+        },
+        {
+            "name": "Shrumeling",
+            "area": "Fungal Wastes",
+            "kills": 20,
+            "health": 5,
+            "geo": 0,
+            "order": -1
+        },
+        {
             "name": "Shrumal Warrior",
             "area": "Fungal Wastes",
             "kills": 20,
@@ -78,6 +422,14 @@
             "kills": 25,
             "health": 20,
             "geo": 12,
+            "order": -1
+        },
+        {
+            "name": "Mantis Lords",
+            "area": "Fungal Wastes",
+            "kills": 1,
+            "health": 530,
+            "geo": 620,
             "order": -1
         },
         {

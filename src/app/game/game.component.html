@@ -4,7 +4,7 @@
   <fa-icon class="question" (click)="openInst()" [icon]="faQuestionCircle"></fa-icon>
 </div>
 <div style="display: flex; justify-content: center;">
-  <button *ngIf="gameMode == 'Free Play' && (won || (!won && post.length == 5))" (click)="goAgain()">Play Again</button>
+  <button *ngIf="gameMode == 'Free Play' && (won || (!won && post.length == 5))" mat-raised-button color="primary" style="margin-bottom: 20px;" (click)="goAgain()">Play Again</button>
 </div>
 <div style="display: flex; justify-content: center; width: 100%;">
     <div style="color: black; margin-right: 25px; width: 35%; display: block;">
@@ -14,7 +14,7 @@
             </div>
             <div style="display: flex; justify-content: center;">
               <div style="width: 20%; display: flex; justify-content: center;">
-                <img style="vertical-align: middle;" aria-hidden src="../../assets/entry-images/4Mommy.jpg" height="85" />
+                <img style="vertical-align: middle;" aria-hidden [src]="'../../assets/entry-images/' + option.name + '.webp'" height="85" />
               </div>
               <div class="option" [ngStyle]="{'background-color': option.area == answer.area ? 'green' : 'red'}">
                 <span><strong>Area</strong></span><br>

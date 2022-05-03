@@ -27,11 +27,21 @@ export class GameComponent implements OnInit {
 
   ngOnInit() {
     this.searchService.getPosts().subscribe((posts: Post[]) => {
+      const now = Date.now()
+      const today = Math.floor(now / 86400000) as unknown as string
       this.searchService.dataEntries = posts
       this.resetPosts = posts
       this.answer = getDailyAnswer()
-      if (localStorage.getItem("dailyArr") != null) {
-        this.post = JSON.parse(localStorage.getItem("dailyArr") as string)
+      if (localStorage.getItem('today') == null) {
+        localStorage.clear()
+        localStorage.setItem('today', today)
+      } else {
+        if (localStorage.getItem("today") != null && (localStorage.getItem('today') as string == today)) {
+          this.post = JSON.parse(localStorage.getItem("dailyArr") as string)
+        } else {
+          localStorage.clear()
+          localStorage.setItem('today', today)
+        }
       }
       this.checkVictory()
       console.log(this.answer)
