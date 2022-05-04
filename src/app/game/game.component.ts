@@ -36,7 +36,7 @@ export class GameComponent implements OnInit {
         localStorage.clear()
         localStorage.setItem('today', today)
       } else {
-        if (localStorage.getItem("today") != null && (localStorage.getItem('today') as string == today)) {
+        if (localStorage.getItem("dailyArr") != null && localStorage.getItem("today") != null && (localStorage.getItem('today') as string == today)) {
           this.post = JSON.parse(localStorage.getItem("dailyArr") as string)
         } else {
           localStorage.clear()
@@ -96,7 +96,7 @@ export class GameComponent implements OnInit {
     }
     if (this.won) {
       openEndScreen(true, this.modalService, this.post, this.answer, this.gameMode)
-    } else if (this.post.length == 5) {
+    } else if (this.post.length == 8) {
       openEndScreen(false, this.modalService, this.post, this.answer, this.gameMode)
     }
   }

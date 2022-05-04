@@ -36,9 +36,5 @@ export const openInstructions = function(modalService: any) {
 export const getDailyAnswer = function() {
     const now = Date.now()
     const today = Math.floor(now / 86400000)
-    console.log("Today: " + today)
-    console.log(entries.entries[today % entries.entries.length])
-    //console.log("ENTRIES: ")
-    //console.log(JSON.stringify(entries.entries))
     return entries.entries[today % entries.entries.length]
 }

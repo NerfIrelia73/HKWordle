@@ -68,18 +68,17 @@ export class SearchBarComponent implements OnInit {
     let posts = event.source.value;
     this.counter++
     posts.order = this.counter
-      console.log("event")
-      console.log(event)
-        if(!posts) {
-          this.searchService.searchOption=[]
-        }
-        else {
-          this.searchService.searchOption.push(posts);
-          this.searchService.allPosts = this.searchService.allPosts.filter(function(el) { return el.name != posts.name; });
-          this.onSelectedOption.emit(this.searchService.searchOption)
-        }
-
-        this.focusOnPlaceInput();
+    console.log("event")
+    console.log(event)
+    if(!posts) {
+      this.searchService.searchOption=[]
+    }
+    else {
+      this.searchService.searchOption.push(posts);
+      this.searchService.allPosts = this.searchService.allPosts.filter(function(el) { return el.name != posts.name; });
+      this.onSelectedOption.emit(this.searchService.searchOption)
+    }
+    this.focusOnPlaceInput();
   }
 
 

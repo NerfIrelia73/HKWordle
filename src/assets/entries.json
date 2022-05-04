@@ -1,476 +1,1300 @@
 {
     "entries": [
         {
-            "name": "Crawlid",
-            "area": "Forgotten Crossroads",
-            "kills": 0,
-            "health": 8,
-            "geo": 2,
-            "order": -1
+          "name": "Hiveling",
+          "area": "The Hive",
+          "kills": 30,
+          "health": 18,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Vengefly",
-            "area": "Forgotten Crossroads",
-            "kills": 45,
-            "health": 8,
-            "geo": 3,
-            "order": -1
+          "name": "Little Weaver",
+          "area": "Deepnest",
+          "kills": 20,
+          "health": 30,
+          "geo": 17,
+          "order": -1
         },
         {
-            "name": "Vengefly King",
-            "area": "Forgotten Crossroads",
-            "kills": 2,
-            "health": 55,
-            "geo": 65,
-            "order": -1
+          "name": "False Knight",
+          "area": "Forgotten Crossroads",
+          "kills": 1,
+          "health": 355,
+          "geo": 200,
+          "order": -1
         },
         {
-            "name": "Gruzzer",
-            "area": "Forgotten Crossroads",
-            "kills": 25,
-            "health": 8,
-            "geo": 2,
-            "order": -1
+          "name": "Mantis Petra",
+          "area": "Queen's Gardens",
+          "kills": 16,
+          "health": 45,
+          "geo": 12,
+          "order": -1
         },
         {
-            "name": "Gruz Mother",
-            "area": "Forgotten Crossroads",
-            "kills": 3,
-            "health": 90,
-            "geo": 50,
-            "order": -1
+          "name": "Oblobbles",
+          "area": "Kingdom's Edge",
+          "kills": 3,
+          "health": 620,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Tiktik",
-            "area": "Forgotten Crossroads",
-            "kills": 30,
-            "health": 8,
-            "geo": 2,
-            "order": -1
+          "name": "Fungified Husk",
+          "area": "Fungal Wastes",
+          "kills": 10,
+          "health": 15,
+          "geo": 5,
+          "order": -1
         },
         {
-            "name": "Aspid Hunter",
-            "area": "Forgotten Crossroads",
-            "kills": 20,
-            "health": 15,
-            "geo": 6,
-            "order": -1
+          "name": "Slobbering Husk",
+          "area": "Infected Crossroads",
+          "kills": 15,
+          "health": 30,
+          "geo": 17,
+          "order": -1
         },
         {
-            "name": "Aspid Mother",
-            "area": "Forgotten Crossroads",
-            "kills": 15,
-            "health": 20,
-            "geo": 10,
-            "order": -1
+          "name": "Stalking Devout",
+          "area": "Deepnest",
+          "kills": 15,
+          "health": 100,
+          "geo": 43,
+          "order": -1
         },
         {
-            "name": "Aspid Hatchling",
-            "area": "Forgotten Crossroads",
-            "kills": 30,
-            "health": 5,
-            "geo": 0,
-            "order": -1
+          "name": "Primal Aspid",
+          "area": "Kingdom's Edge",
+          "kills": 25,
+          "health": 35,
+          "geo": 6,
+          "order": -1
         },
         {
-            "name": "Goam",
-            "area": "Forgotten Crossroads",
-            "kills": 0,
-            "health": 0,
-            "geo": 0,
-            "order": -1
+          "name": "Aluba",
+          "area": "Greenpath",
+          "kills": 1,
+          "health": 1,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Wandering Husk",
-            "area": "Forgotten Crossroads",
-            "kills": 35,
-            "health": 15,
-            "geo": 3,
-            "order": -1
+          "name": "Husk Hive",
+          "area": "The Hive",
+          "kills": 10,
+          "health": 60,
+          "geo": 16,
+          "order": -1
         },
         {
-            "name": "Husk Hornhead",
-            "area": "Forgotten Crossroads",
-            "kills": 35,
-            "health": 15,
-            "geo": 4,
-            "order": -1
+          "name": "Gluttonous Husk",
+          "area": "City of Tears",
+          "kills": 25,
+          "health": 30,
+          "geo": 11,
+          "order": -1
         },
         {
-            "name": "Leaping Husk",
-            "area": "Forgotten Crossroads",
-            "kills": 35,
-            "health": 15,
-            "geo": 3,
-            "order": -1
+          "name": "Dirtcarver",
+          "area": "Deepnest",
+          "kills": 35,
+          "health": 20,
+          "geo": 6,
+          "order": -1
         },
         {
-            "name": "Husk Bully",
-            "area": "Forgotten Crossroads",
-            "kills": 35,
-            "health": 15,
-            "geo": 3,
-            "order": -1
+          "name": "Heavy Fool",
+          "area": "Kingdom's Edge",
+          "kills": 20,
+          "health": 90,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Husk Warrior",
-            "area": "Forgotten Crossroads",
-            "kills": 10,
-            "health": 15,
-            "geo": 6,
-            "order": -1
+          "name": "Xero",
+          "area": "Resting Grounds",
+          "kills": 1,
+          "health": 570,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Husk Guard",
-            "area": "Forgotten Crossroads",
-            "kills": 6,
-            "health": 70,
-            "geo": 45,
-            "order": -1
+          "name": "Lifeseed",
+          "area": "Multiple",
+          "kills": 10,
+          "health": 1,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "False Knight",
-            "area": "Forgotten Crossroads",
-            "kills": 1,
-            "health": 355,
-            "geo": 200,
-            "order": -1
+          "name": "Death Loodle",
+          "area": "Kingdom's Edge",
+          "kills": 15,
+          "health": 45,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Maggot",
-            "area": "Forgotten Crossroads",
-            "kills": 2,
-            "health": 1,
-            "geo": 2,
-            "order": -1
+          "name": "Grimmkin Master",
+          "area": "Multiple",
+          "kills": 1,
+          "health": 240,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Menderbug",
-            "area": "Forgotten Crossroads",
-            "kills": 1,
-            "health": 1,
-            "geo": 0,
-            "order": -1
+          "name": "Wandering Husk",
+          "area": "Forgotten Crossroads",
+          "kills": 35,
+          "health": 15,
+          "geo": 3,
+          "order": -1
         },
         {
-            "name": "Lifeseed",
-            "area": "Multiple",
-            "kills": 10,
-            "health": 1,
-            "geo": 0,
-            "order": -1
+          "name": "Menderbug",
+          "area": "Forgotten Crossroads",
+          "kills": 1,
+          "health": 1,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Entombed Husk",
-            "area": "Resting Grounds",
-            "kills": 10,
-            "health": 45,
-            "geo": 15,
-            "order": -1
+          "name": "Durandoo",
+          "area": "Greenpath",
+          "kills": 8,
+          "health": 30,
+          "geo": 6,
+          "order": -1
         },
         {
-            "name": "Baldur",
-            "area": "Greenpath",
-            "kills": 20,
-            "health": 15,
-            "geo": 4,
-            "order": -1
+          "name": "Markoth",
+          "area": "Kingdom's Edge",
+          "kills": 1,
+          "health": 705,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Elder Baldur",
-            "area": "Greenpath",
-            "kills": 1,
-            "health": 60,
-            "geo": 50,
-            "order": -1
+          "name": "Kingsmould",
+          "area": "White Palace",
+          "kills": 2,
+          "health": 170,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Mosscreep",
-            "area": "Greenpath",
-            "kills": 30,
-            "health": 10,
-            "geo": 2,
-            "order": -1
+          "name": "Sharp Baldur",
+          "area": "Kingdom's Edge",
+          "kills": 20,
+          "health": 65,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Mossfly",
-            "area": "Greenpath",
-            "kills": 25,
-            "health": 15,
-            "geo": 2,
-            "order": -1
+          "name": "Moss Charger",
+          "area": "Greenpath",
+          "kills": 15,
+          "health": 15,
+          "geo": 8,
+          "order": -1
         },
         {
-            "name": "Mosskin",
-            "area": "Greenpath",
-            "kills": 25,
-            "health": 15,
-            "geo": 3,
-            "order": -1
+          "name": "Crystallised Husk",
+          "area": "Crystal Peaks",
+          "kills": 15,
+          "health": 35,
+          "geo": 20,
+          "order": -1
         },
         {
-            "name": "Volatile Mosskin",
-            "area": "Greenpath",
-            "kills": 25,
-            "health": 15,
-            "geo": 5,
-            "order": -1
+          "name": "Uoma",
+          "area": "Fog Canyon",
+          "kills": 20,
+          "health": 1,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Fool Eater",
-            "area": "Greenpath",
-            "kills": 15,
-            "health": 16,
-            "geo": 9,
-            "order": -1
+          "name": "Hornet Protector",
+          "area": "Greenpath",
+          "kills": 2,
+          "health": 225,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Squit",
-            "area": "Greenpath",
-            "kills": 25,
-            "health": 10,
-            "geo": 5,
-            "order": -1
+          "name": "Flukemarm",
+          "area": "Royal Waterways",
+          "kills": 1,
+          "health": 350,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Obble",
-            "area": "Greenpath",
-            "kills": 20,
-            "health": 10,
-            "geo": 4,
-            "order": -1
+          "name": "Mosskin",
+          "area": "Greenpath",
+          "kills": 25,
+          "health": 15,
+          "geo": 3,
+          "order": -1
         },
         {
-            "name": "Gulka",
-            "area": "Greenpath",
-            "kills": 15,
-            "health": 10,
-            "geo": 6,
-            "order": -1
+          "name": "Mantis Traitor",
+          "area": "Queen's Gardens",
+          "kills": 15,
+          "health": 74,
+          "geo": 22,
+          "order": -1
         },
         {
-            "name": "Maskfly",
-            "area": "Greenpath",
-            "kills": 15,
-            "health": 1,
-            "geo": 0,
-            "order": -1
+          "name": "Failed Champion",
+          "area": "Forgotten Crossroads",
+          "kills": 1,
+          "health": 1260,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Moss Charger",
-            "area": "Greenpath",
-            "kills": 15,
-            "health": 15,
-            "geo": 8,
-            "order": -1
+          "name": "Husk Miner",
+          "area": "Crystal Peaks",
+          "kills": 20,
+          "health": 25,
+          "geo": 10,
+          "order": -1
         },
         {
-            "name": "Massive Moss Charger",
-            "area": "Greenpath",
-            "kills": 1,
-            "health": 100,
-            "geo": 300,
-            "order": -1
+          "name": "Bluggsac",
+          "area": "Multiple",
+          "kills": 5,
+          "health": 20,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Moss Knight",
-            "area": "Greenpath",
-            "kills": 8,
-            "health": 50,
-            "geo": 40,
-            "order": -1
+          "name": "Furious Vengefly",
+          "area": "Infected Crossroads",
+          "kills": 15,
+          "health": 40,
+          "geo": 20,
+          "order": -1
         },
         {
-            "name": "Mossy Vagabond",
-            "area": "Greenpath",
-            "kills": 10,
-            "health": 25,
-            "geo": 8,
-            "order": -1
+          "name": "Shadow Creeper",
+          "area": "Ancient Basin",
+          "kills": 20,
+          "health": 20,
+          "geo": 2,
+          "order": -1
         },
         {
-            "name": "Durandoo",
-            "area": "Greenpath",
-            "kills": 8,
-            "health": 30,
-            "geo": 6,
-            "order": -1
+          "name": "Lost Kin",
+          "area": "Ancient Basin",
+          "kills": 1,
+          "health": 1200,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Duranda",
-            "area": "Greenpath",
-            "kills": 8,
-            "health": 30,
-            "geo": 4,
-            "order": -1
+          "name": "Hive Knight",
+          "area": "The Hive",
+          "kills": 1,
+          "health": 920,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Aluba",
-            "area": "Greenpath",
-            "kills": 1,
-            "health": 1,
-            "geo": 0,
-            "order": -1
+          "name": "Broken Vessel",
+          "area": "Ancient Basin",
+          "kills": 1,
+          "health": 525,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Charged Lumafly",
-            "area": "Fog Canyon",
-            "kills": 0,
-            "health": 0,
-            "geo": 0,
-            "order": -1
+          "name": "Lightseed",
+          "area": "Multiple",
+          "kills": 20,
+          "health": 1,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Uoma",
-            "area": "Fog Canyon",
-            "kills": 20,
-            "health": 1,
-            "geo": 0,
-            "order": -1
+          "name": "Galien",
+          "area": "Deepnest",
+          "kills": 1,
+          "health": 640,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Ooma",
-            "area": "Fog Canyon",
-            "kills": 12,
-            "health": 1,
-            "geo": 5,
-            "order": -1
+          "name": "Hwurmp",
+          "area": "Royal Waterways",
+          "kills": 20,
+          "health": 25,
+          "geo": 5,
+          "order": -1
         },
         {
-            "name": "Uumuu",
-            "area": "Fog Canyon",
-            "kills": 1,
-            "health": 300,
-            "geo": 0,
-            "order": -1
+          "name": "Grimmkin Novice",
+          "area": "Multiple",
+          "kills": 1,
+          "health": 160,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Ambloom",
-            "area": "Fungal Wastes",
-            "kills": 15,
-            "health": 12,
-            "geo": 2,
-            "order": -1
+          "name": "Leaping Husk",
+          "area": "Forgotten Crossroads",
+          "kills": 35,
+          "health": 15,
+          "geo": 3,
+          "order": -1
         },
         {
-            "name": "Fungling",
-            "area": "Fungal Wastes",
-            "kills": 30,
-            "health": 10,
-            "geo": 2,
-            "order": -1
+          "name": "Ooma",
+          "area": "Fog Canyon",
+          "kills": 12,
+          "health": 1,
+          "geo": 5,
+          "order": -1
         },
         {
-            "name": "Fungoon",
-            "area": "Fungal Wastes",
-            "kills": 20,
-            "health": 15,
-            "geo": 6,
-            "order": -1
+          "name": "Nosk",
+          "area": "Deepnest",
+          "kills": 1,
+          "health": 680,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Sporg",
-            "area": "Fungal Wastes",
-            "kills": 20,
-            "health": 25,
-            "geo": 3,
-            "order": -1
+          "name": "Goam",
+          "area": "Forgotten Crossroads",
+          "kills": 0,
+          "health": 0,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Fungified Husk",
-            "area": "Fungal Wastes",
-            "kills": 10,
-            "health": 15,
-            "geo": 5,
-            "order": -1
+          "name": "Wingmould",
+          "area": "White Palace",
+          "kills": 10,
+          "health": 999,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Shrumeling",
-            "area": "Fungal Wastes",
-            "kills": 20,
-            "health": 5,
-            "geo": 0,
-            "order": -1
+          "name": "Duranda",
+          "area": "Greenpath",
+          "kills": 8,
+          "health": 30,
+          "geo": 4,
+          "order": -1
         },
         {
-            "name": "Shrumal Warrior",
-            "area": "Fungal Wastes",
-            "kills": 20,
-            "health": 20,
-            "geo": 8,
-            "order": -1
+          "name": "Nightmare King Grimm",
+          "area": "Dirtmouth",
+          "kills": 1,
+          "health": 1500,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Shrumal Ogre",
-            "area": "Fungal Wastes",
-            "kills": 8,
-            "health": 80,
-            "geo": 45,
-            "order": -1
+          "name": "Great Husk Sentry",
+          "area": "City of Tears",
+          "kills": 10,
+          "health": 170,
+          "geo": 50,
+          "order": -1
         },
         {
-            "name": "Mantis Youth",
-            "area": "Fungal Wastes",
-            "kills": 25,
-            "health": 15,
-            "geo": 5,
-            "order": -1
+          "name": "Folly",
+          "area": "Soul Sanctum",
+          "kills": 15,
+          "health": 13,
+          "geo": 5,
+          "order": -1
         },
         {
-            "name": "Mantis Warrior",
-            "area": "Fungal Wastes",
-            "kills": 25,
-            "health": 20,
-            "geo": 12,
-            "order": -1
+          "name": "Aspid Mother",
+          "area": "Forgotten Crossroads",
+          "kills": 15,
+          "health": 20,
+          "geo": 10,
+          "order": -1
         },
         {
-            "name": "Mantis Lords",
-            "area": "Fungal Wastes",
-            "kills": 1,
-            "health": 530,
-            "geo": 620,
-            "order": -1
+          "name": "Watcher Knights",
+          "area": "City of Tears",
+          "kills": 1,
+          "health": 260,
+          "geo": 655,
+          "order": -1
         },
         {
-            "name": "Gluttonous Husk",
-            "area": "City of Tears",
-            "kills": 25,
-            "health": 30,
-            "geo": 11,
-            "order": -1
+          "name": "Armoured Squit",
+          "area": "Kingdom's Edge",
+          "kills": 15,
+          "health": 40,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Great Husk Sentry",
-            "area": "City of Tears",
-            "kills": 10,
-            "health": 170,
-            "geo": 50,
-            "order": -1
+          "name": "Ambloom",
+          "area": "Fungal Wastes",
+          "kills": 15,
+          "health": 12,
+          "geo": 2,
+          "order": -1
         },
         {
-            "name": "Watcher Knights",
-            "area": "City of Tears",
-            "kills": 1,
-            "health": 260,
-            "geo": 655,
-            "order": -1
+          "name": "Heavy Sentry",
+          "area": "City of Tears",
+          "kills": 20,
+          "health": 35,
+          "geo": 10,
+          "order": -1
         },
         {
-            "name": "Flukefey",
-            "area": "Royal Waterways",
-            "kills": 15,
-            "health": 13,
-            "geo": 0,
-            "order": -1
+          "name": "Grub Mimic",
+          "area": "Multiple",
+          "kills": 5,
+          "health": 45,
+          "geo": 0,
+          "order": -1
         },
         {
-            "name": "Flukemon",
-            "area": "Royal Waterways",
-            "kills": 20,
-            "health": 55,
-            "geo": 12,
-            "order": -1
+          "name": "Mossfly",
+          "area": "Greenpath",
+          "kills": 25,
+          "health": 15,
+          "geo": 2,
+          "order": -1
+        },
+        {
+          "name": "Husk Dandy",
+          "area": "City of Tears",
+          "kills": 25,
+          "health": 20,
+          "geo": 9,
+          "order": -1
+        },
+        {
+          "name": "Flukemon",
+          "area": "Royal Waterways",
+          "kills": 20,
+          "health": 55,
+          "geo": 12,
+          "order": -1
+        },
+        {
+          "name": "Mawlurk",
+          "area": "Ancient Basin",
+          "kills": 10,
+          "health": 135,
+          "geo": 25,
+          "order": -1
+        },
+        {
+          "name": "Fungoon",
+          "area": "Fungal Wastes",
+          "kills": 20,
+          "health": 15,
+          "geo": 6,
+          "order": -1
+        },
+        {
+          "name": "Crystal Guardian",
+          "area": "Crystal Peaks",
+          "kills": 2,
+          "health": 280,
+          "geo": 385,
+          "order": -1
+        },
+        {
+          "name": "The Hollow Knight",
+          "area": "Dirtmouth",
+          "kills": 1,
+          "health": 1250,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Shardmite",
+          "area": "Crystal Peaks",
+          "kills": 15,
+          "health": 15,
+          "geo": 2,
+          "order": -1
+        },
+        {
+          "name": "Moss Knight",
+          "area": "Greenpath",
+          "kills": 8,
+          "health": 50,
+          "geo": 40,
+          "order": -1
+        },
+        {
+          "name": "Enraged Guardian",
+          "area": "Crystal Peaks",
+          "kills": 2,
+          "health": 600,
+          "geo": 550,
+          "order": -1
+        },
+        {
+          "name": "Traitor Lord",
+          "area": "Queen's Gardens",
+          "kills": 1,
+          "health": 800,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Aspid Hatchling",
+          "area": "Forgotten Crossroads",
+          "kills": 30,
+          "health": 5,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Massive Moss Charger",
+          "area": "Greenpath",
+          "kills": 1,
+          "health": 100,
+          "geo": 300,
+          "order": -1
+        },
+        {
+          "name": "Mantis Warrior",
+          "area": "Fungal Wastes",
+          "kills": 25,
+          "health": 20,
+          "geo": 12,
+          "order": -1
+        },
+        {
+          "name": "Shrumal Ogre",
+          "area": "Fungal Wastes",
+          "kills": 8,
+          "health": 80,
+          "geo": 45,
+          "order": -1
+        },
+        {
+          "name": "Baldur",
+          "area": "Greenpath",
+          "kills": 20,
+          "health": 15,
+          "geo": 4,
+          "order": -1
+        },
+        {
+          "name": "White Defender",
+          "area": "Royal Waterways",
+          "kills": 1,
+          "health": 1600,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Volatile Gruzzer",
+          "area": "Infected Crossroads",
+          "kills": 15,
+          "health": 40,
+          "geo": 15,
+          "order": -1
+        },
+        {
+          "name": "Vengefly King",
+          "area": "Forgotten Crossroads",
+          "kills": 2,
+          "health": 55,
+          "geo": 65,
+          "order": -1
+        },
+        {
+          "name": "Pale Lurker",
+          "area": "Kingdom's Edge",
+          "kills": 1,
+          "health": 400,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Cowardly Husk",
+          "area": "City of Tears",
+          "kills": 25,
+          "health": 20,
+          "geo": 9,
+          "order": -1
+        },
+        {
+          "name": "Spiny Husk",
+          "area": "Queen's Gardens",
+          "kills": 20,
+          "health": 44,
+          "geo": 12,
+          "order": -1
+        },
+        {
+          "name": "Hopper",
+          "area": "Kingdom's Edge",
+          "kills": 25,
+          "health": 50,
+          "geo": 16,
+          "order": -1
+        },
+        {
+          "name": "Gruz Mother",
+          "area": "Forgotten Crossroads",
+          "kills": 3,
+          "health": 90,
+          "geo": 50,
+          "order": -1
+        },
+        {
+          "name": "Belfly",
+          "area": "City of Tears",
+          "kills": 15,
+          "health": 5,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Deepling",
+          "area": "Deepnest",
+          "kills": 25,
+          "health": 15,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Shrumal Warrior",
+          "area": "Fungal Wastes",
+          "kills": 20,
+          "health": 20,
+          "geo": 8,
+          "order": -1
+        },
+        {
+          "name": "Crawlid",
+          "area": "Forgotten Crossroads",
+          "kills": 0,
+          "health": 8,
+          "geo": 2,
+          "order": -1
+        },
+        {
+          "name": "Great Hopper",
+          "area": "Kingdom's Edge",
+          "kills": 10,
+          "health": 130,
+          "geo": 30,
+          "order": -1
+        },
+        {
+          "name": "Gulka",
+          "area": "Greenpath",
+          "kills": 15,
+          "health": 10,
+          "geo": 6,
+          "order": -1
+        },
+        {
+          "name": "Husk Sentry",
+          "area": "City of Tears",
+          "kills": 25,
+          "health": 28,
+          "geo": 10,
+          "order": -1
+        },
+        {
+          "name": "Mosscreep",
+          "area": "Greenpath",
+          "kills": 30,
+          "health": 10,
+          "geo": 2,
+          "order": -1
+        },
+        {
+          "name": "Shade",
+          "area": "Multiple",
+          "kills": 0,
+          "health": 84,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Winged Sentry",
+          "area": "City of Tears",
+          "kills": 30,
+          "health": 25,
+          "geo": 12,
+          "order": -1
+        },
+        {
+          "name": "Maggot",
+          "area": "Forgotten Crossroads",
+          "kills": 2,
+          "health": 1,
+          "geo": 2,
+          "order": -1
+        },
+        {
+          "name": "No Eyes",
+          "area": "Greenpath",
+          "kills": 1,
+          "health": 570,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Marmu",
+          "area": "Queen's Gardens",
+          "kills": 1,
+          "health": 570,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Garpede",
+          "area": "Deepnest",
+          "kills": 0,
+          "health": 0,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Loodle",
+          "area": "Queen's Gardens",
+          "kills": 15,
+          "health": 30,
+          "geo": 9,
+          "order": -1
+        },
+        {
+          "name": "Mistake",
+          "area": "Soul Sanctum",
+          "kills": 25,
+          "health": 13,
+          "geo": 3,
+          "order": -1
+        },
+        {
+          "name": "Grimmkin Nightmare",
+          "area": "Multiple",
+          "kills": 1,
+          "health": 320,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Vengefly",
+          "area": "Forgotten Crossroads",
+          "kills": 45,
+          "health": 8,
+          "geo": 3,
+          "order": -1
+        },
+        {
+          "name": "Soul Master",
+          "area": "Soul Sanctum",
+          "kills": 1,
+          "health": 385,
+          "geo": 380,
+          "order": -1
+        },
+        {
+          "name": "Void Tendrils",
+          "area": "The Abyss",
+          "kills": 0,
+          "health": 0,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Gruzzer",
+          "area": "Forgotten Crossroads",
+          "kills": 25,
+          "health": 8,
+          "geo": 2,
+          "order": -1
+        },
+        {
+          "name": "Shielded Fool",
+          "area": "Kingdom's Edge",
+          "kills": 25,
+          "health": 65,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "The Radiance",
+          "area": "Dirtmouth",
+          "kills": 1,
+          "health": 1700,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Troupe Master Grimm",
+          "area": "Dirtmouth",
+          "kills": 1,
+          "health": 1000,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Uumuu",
+          "area": "Fog Canyon",
+          "kills": 1,
+          "health": 300,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Flukemunga",
+          "area": "Royal Waterways",
+          "kills": 8,
+          "health": 150,
+          "geo": 23,
+          "order": -1
+        },
+        {
+          "name": "Hive Guardian",
+          "area": "The Hive",
+          "kills": 12,
+          "health": 100,
+          "geo": 25,
+          "order": -1
+        },
+        {
+          "name": "Soul Twister",
+          "area": "Soul Sanctum",
+          "kills": 20,
+          "health": 35,
+          "geo": 25,
+          "order": -1
+        },
+        {
+          "name": "Elder Baldur",
+          "area": "Greenpath",
+          "kills": 1,
+          "health": 60,
+          "geo": 50,
+          "order": -1
+        },
+        {
+          "name": "Husk Bully",
+          "area": "Forgotten Crossroads",
+          "kills": 35,
+          "health": 15,
+          "geo": 3,
+          "order": -1
+        },
+        {
+          "name": "Gorb",
+          "area": "Howling Cliffs",
+          "kills": 1,
+          "health": 570,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Dung Defender",
+          "area": "Royal Waterways",
+          "kills": 1,
+          "health": 900,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Lance Sentry",
+          "area": "City of Tears",
+          "kills": 25,
+          "health": 25,
+          "geo": 12,
+          "order": -1
+        },
+        {
+          "name": "Mantis Lords",
+          "area": "Fungal Wastes",
+          "kills": 1,
+          "health": 530,
+          "geo": 620,
+          "order": -1
+        },
+        {
+          "name": "Sibling",
+          "area": "The Abyss",
+          "kills": 25,
+          "health": 20,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Boofly",
+          "area": "Kingdom's Edge",
+          "kills": 20,
+          "health": 40,
+          "geo": 8,
+          "order": -1
+        },
+        {
+          "name": "Lesser Mawlek",
+          "area": "Ancient Basin",
+          "kills": 10,
+          "health": 60,
+          "geo": 18,
+          "order": -1
+        },
+        {
+          "name": "Tiktik",
+          "area": "Forgotten Crossroads",
+          "kills": 30,
+          "health": 8,
+          "geo": 2,
+          "order": -1
+        },
+        {
+          "name": "Corpse Creeper",
+          "area": "Deepnest",
+          "kills": 15,
+          "health": 33,
+          "geo": 10,
+          "order": -1
+        },
+        {
+          "name": "Zote The Mighty",
+          "area": "Kingdom's Edge",
+          "kills": 1,
+          "health": 200,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Husk Warrior",
+          "area": "Forgotten Crossroads",
+          "kills": 10,
+          "health": 15,
+          "geo": 6,
+          "order": -1
+        },
+        {
+          "name": "Mantis Youth",
+          "area": "Fungal Wastes",
+          "kills": 25,
+          "health": 15,
+          "geo": 5,
+          "order": -1
+        },
+        {
+          "name": "God Tamer",
+          "area": "Kingdom's Edge",
+          "kills": 1,
+          "health": 1050,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Sturdy Fool",
+          "area": "Kingdom's Edge",
+          "kills": 25,
+          "health": 80,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Maskfly",
+          "area": "Greenpath",
+          "kills": 15,
+          "health": 1,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Battle Obble",
+          "area": "Kingdom's Edge",
+          "kills": 15,
+          "health": 70,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Shrumeling",
+          "area": "Fungal Wastes",
+          "kills": 20,
+          "health": 5,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Squit",
+          "area": "Greenpath",
+          "kills": 25,
+          "health": 10,
+          "geo": 5,
+          "order": -1
+        },
+        {
+          "name": "Fool Eater",
+          "area": "Greenpath",
+          "kills": 15,
+          "health": 16,
+          "geo": 9,
+          "order": -1
+        },
+        {
+          "name": "Flukefey",
+          "area": "Royal Waterways",
+          "kills": 15,
+          "health": 13,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "The Collector",
+          "area": "City of Tears",
+          "kills": 1,
+          "health": 850,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Gorgeous Husk",
+          "area": "City of Tears",
+          "kills": 1,
+          "health": 220,
+          "geo": 420,
+          "order": -1
+        },
+        {
+          "name": "Aspid Hunter",
+          "area": "Forgotten Crossroads",
+          "kills": 20,
+          "health": 15,
+          "geo": 6,
+          "order": -1
+        },
+        {
+          "name": "Husk Hornhead",
+          "area": "Forgotten Crossroads",
+          "kills": 35,
+          "health": 15,
+          "geo": 4,
+          "order": -1
+        },
+        {
+          "name": "Charged Lumafly",
+          "area": "Fog Canyon",
+          "kills": 0,
+          "health": 0,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Soul Tyrant",
+          "area": "Soul Sanctum",
+          "kills": 1,
+          "health": 1250,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Infected Balloon",
+          "area": "Ancient Basin",
+          "kills": 10,
+          "health": 15,
+          "geo": 5,
+          "order": -1
+        },
+        {
+          "name": "Obble",
+          "area": "Greenpath",
+          "kills": 20,
+          "health": 10,
+          "geo": 4,
+          "order": -1
+        },
+        {
+          "name": "Crystal Crawler",
+          "area": "Crystal Peaks",
+          "kills": 15,
+          "health": 15,
+          "geo": 8,
+          "order": -1
+        },
+        {
+          "name": "Royal Retainer",
+          "area": "White Palace",
+          "kills": 10,
+          "health": 5,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Husk Guard",
+          "area": "Forgotten Crossroads",
+          "kills": 6,
+          "health": 70,
+          "geo": 45,
+          "order": -1
+        },
+        {
+          "name": "Carver Hatcher",
+          "area": "Deepnest",
+          "kills": 15,
+          "health": 35,
+          "geo": 25,
+          "order": -1
+        },
+        {
+          "name": "Hive Soldier",
+          "area": "The Hive",
+          "kills": 15,
+          "health": 65,
+          "geo": 15,
+          "order": -1
+        },
+        {
+          "name": "Mossy Vagabond",
+          "area": "Greenpath",
+          "kills": 10,
+          "health": 25,
+          "geo": 8,
+          "order": -1
+        },
+        {
+          "name": "Sporg",
+          "area": "Fungal Wastes",
+          "kills": 20,
+          "health": 25,
+          "geo": 3,
+          "order": -1
+        },
+        {
+          "name": "Volatile Mosskin",
+          "area": "Greenpath",
+          "kills": 25,
+          "health": 15,
+          "geo": 5,
+          "order": -1
+        },
+        {
+          "name": "Winged Fool",
+          "area": "Kingdom's Edge",
+          "kills": 25,
+          "health": 70,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Entombed Husk",
+          "area": "Resting Grounds",
+          "kills": 10,
+          "health": 45,
+          "geo": 15,
+          "order": -1
+        },
+        {
+          "name": "Crystal Hunter",
+          "area": "Crystal Peaks",
+          "kills": 20,
+          "health": 25,
+          "geo": 7,
+          "order": -1
+        },
+        {
+          "name": "Violent Husk",
+          "area": "Infected Crossroads",
+          "kills": 15,
+          "health": 40,
+          "geo": 15,
+          "order": -1
+        },
+        {
+          "name": "Fungling",
+          "area": "Fungal Wastes",
+          "kills": 30,
+          "health": 10,
+          "geo": 2,
+          "order": -1
+        },
+        {
+          "name": "Elder Hu",
+          "area": "Fungal Wastes",
+          "kills": 1,
+          "health": 650,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Soul Warrior",
+          "area": "Soul Sanctum",
+          "kills": 2,
+          "health": 300,
+          "geo": 200,
+          "order": -1
+        },
+        {
+          "name": "Volt Twister",
+          "area": "Kingdom's Edge",
+          "kills": 6,
+          "health": 80,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Grey Prince Zote",
+          "area": "Dirtmouth",
+          "kills": 1,
+          "health": 1500,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Deephunter",
+          "area": "Deepnest",
+          "kills": 20,
+          "health": 18,
+          "geo": 7,
+          "order": -1
+        },
+        {
+          "name": "Pilflip",
+          "area": "Royal Waterways",
+          "kills": 20,
+          "health": 30,
+          "geo": 5,
+          "order": -1
+        },
+        {
+          "name": "Glimback",
+          "area": "Crystal Peaks",
+          "kills": 15,
+          "health": 35,
+          "geo": 6,
+          "order": -1
+        },
+        {
+          "name": "Hornet Sentinel",
+          "area": "Kingdom's Edge",
+          "kills": 2,
+          "health": 700,
+          "geo": 0,
+          "order": -1
+        },
+        {
+          "name": "Brooding Mawlek",
+          "area": "Multiple",
+          "kills": 1,
+          "health": 300,
+          "geo": 0,
+          "order": -1
         }
-    ]
+      ]
 }
