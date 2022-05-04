@@ -18,7 +18,6 @@ export class HomePageComponent implements OnInit {
   }
 
   openInstructions() {
-    console.log("hello world")
     const modalRef = this.modalService.open(InstructionsComponent, {
       size: 'xl',
       centered: true,

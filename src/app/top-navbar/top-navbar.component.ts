@@ -16,8 +16,6 @@ export class TopNavbarComponent implements OnInit {
   }
 
   changeGameMode(mode: any) {
-    console.log(`This is the first one`)
-    console.log(mode.tab.textLabel)
     this.newModeEvent.emit(mode)
   }
 

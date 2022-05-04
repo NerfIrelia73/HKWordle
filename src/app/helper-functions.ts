@@ -10,7 +10,6 @@ export const sortArray = function(e: Post[]) {
 }
 
 export const openEndScreen = function(check: boolean, modalService: NgbModal, post: Post[], answer: Post, mode: string) {
-    console.log("hello world")
     const modalRef = modalService.open(EndScreenComponent, {
       size: 'l',
       centered: true,
@@ -23,7 +22,6 @@ export const openEndScreen = function(check: boolean, modalService: NgbModal, po
 }
 
 export const openInstructions = function(modalService: any) {
-    console.log("hello world")
     modalService.open(InstructionsComponent, {
       size: 'xl',
       centered: true,
