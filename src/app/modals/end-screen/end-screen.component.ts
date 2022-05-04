@@ -66,7 +66,7 @@ export class EndScreenComponent implements OnInit {
       }
       text += `||${this.guesses[i].name}||\n`
     }
-    text += "\nTry it yourself at {{ website }}"
+    text += "\nTry it yourself at https://hunters-journle.web.app/"
     return text
   }
 
