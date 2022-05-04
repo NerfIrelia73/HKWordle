@@ -18,7 +18,6 @@ export class SearchService {
 
 
   getPosts(): Observable<Post[]> {
-    console.log(this.dataEntries)
     if (this.dataEntries.length > 0) {}
     return of(this.dataEntries)
   }

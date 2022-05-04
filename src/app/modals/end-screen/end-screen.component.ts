@@ -17,9 +17,6 @@ export class EndScreenComponent implements OnInit {
   @Input() public mode: any;
 
   ngOnInit(): void {
-    console.log("Logging guesses")
-    console.log(this.guesses)
-    console.log(this.won)
   }
 
   copyToClipboard() {

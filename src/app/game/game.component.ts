@@ -44,13 +44,10 @@ export class GameComponent implements OnInit {
         }
       }
       this.checkVictory()
-      console.log(this.answer)
     });
   }
 
   onSelectedOption(e: any) {
-    console.log("This is E")
-    console.log(e)
     this.post = sortArray(e)
     if (this.gameMode == "The Daily Puzzle") {
       localStorage.setItem("dailyArr", JSON.stringify(this.post))
@@ -60,7 +57,6 @@ export class GameComponent implements OnInit {
 
 
   changeMode(mode: any) {
-    console.log(`This is mode: ${mode.tab.textLabel}`)
     this.gameMode = mode.tab.textLabel
     this.won = false
     if (mode.tab.textLabel == "The Daily Puzzle") {
@@ -80,14 +76,9 @@ export class GameComponent implements OnInit {
     for (let option of this.post) {
         this.searchService.allPosts = this.searchService.allPosts.filter(function(el) { return el.name != option.name; });
     }
-    console.log(this.post)
   }
 
   checkVictory() {
-    console.log("Checking victory")
-    console.log(this.post)
-    console.log(this.answer)
-    console.log(this.post.includes(this.answer))
     //We can't use includes because the order attribute gets reset
     for (let item of this.post) {
       if (item.name == this.answer.name) {
@@ -107,8 +98,6 @@ export class GameComponent implements OnInit {
     this.searchService.searchOption = this.post
     this.searchService.allPosts = this.resetPosts
     this.won = false
-    console.log("this is reset answer")
-    console.log(this.answer)
   }
 
   openInst() {
