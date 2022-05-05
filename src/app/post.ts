@@ -4,5 +4,6 @@ export interface Post {
     kills: number,
     health: number,
     geo: number,
+    alias: string[],
     order: number
 }

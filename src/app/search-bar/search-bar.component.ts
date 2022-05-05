@@ -53,8 +53,19 @@ export class SearchBarComponent implements OnInit {
     if (val === '' || val === null) {
       return [];
     }
-    return val ? this.searchService.allPosts.filter(s => s.name.toLowerCase().indexOf(val.toLowerCase()) != -1)
-      : this.searchService.allPosts;
+    return val ? this.searchService.allPosts.filter((s) => {
+      let check = false
+      for (const alias of s.alias) {
+        if (alias.toLowerCase().indexOf(val.toLowerCase()) != -1) {
+          check = true
+        }
+      }
+      if (s.name.toLowerCase().indexOf(val.toLowerCase()) != -1) {
+        check = true
+      }
+      return check
+    })
+    : this.searchService.allPosts;
   }
 
   displayFn(post: Post) {

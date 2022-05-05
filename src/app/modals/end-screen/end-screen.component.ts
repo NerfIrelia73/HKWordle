@@ -35,10 +35,16 @@ export class EndScreenComponent implements OnInit {
 
   createText() {
     let text = ""
+    let longest = 0
     if (this.won) {
       text = `I solved today's Hunter's Journle in ${this.guesses.length} guesses!\n\n`
     } else {
       text = "I was unable to solve today's Hunter's Journle\n\n"
+    }
+    for (let i = 0; i < this.guesses.length; i++) {
+      if (longest < this.guesses[i].name.length) {
+        longest = this.guesses[i].name.length
+      }
     }
     for (let i = this.guesses.length - 1; i >= 0; i--) {
       if (this.guesses[i].area == this.answer.area) {
@@ -64,7 +70,8 @@ export class EndScreenComponent implements OnInit {
       } else {
         text += ":black_large_square:"
       }
-      text += `||${this.guesses[i].name}||\n`
+      text += ` ||${this.guesses[i].name}`
+      text += ' '.repeat(longest - this.guesses[i].name.length) + "||\n"
     }
     text += "\nTry it yourself at https://hunters-journle.web.app/"
     return text
