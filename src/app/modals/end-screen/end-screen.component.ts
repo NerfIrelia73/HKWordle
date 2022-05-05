@@ -34,10 +34,11 @@ export class EndScreenComponent implements OnInit {
   }
 
   createText() {
+    const now = Date.now()
     let text = ""
     let longest = 0
     if (this.won) {
-      text = `I solved today's Hunter's Journle in ${this.guesses.length} guesses!\n\n`
+      text = `I solved Hunter's Journle #${Math.floor(now / 86400000) - 19115} in ${this.guesses.length} guesses!\n\n`
     } else {
       text = "I was unable to solve today's Hunter's Journle\n\n"
     }

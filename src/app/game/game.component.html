@@ -4,6 +4,7 @@
 </div>
 <div style="display: flex; justify-content: center;">
   <h3 class="gameTitle">{{ gameMode }}</h3>
+  <h3 *ngIf="gameMode == 'The Daily Puzzle'" class="gameTitle"> #{{ puzzleNumber }}</h3>
   <fa-icon class="question" (click)="openInst()" [icon]="faQuestionCircle"></fa-icon>
 </div>
 <div style="display: flex; justify-content: center;">
