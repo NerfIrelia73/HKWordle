@@ -21,6 +21,8 @@ export class GameComponent implements OnInit {
   won = false;
   post: Post[] = []
   answer: Post = {name: "", area: "", kills: 0, health: 0, geo: 0, alias: [""], order: -1}
+  now = Date.now()
+  puzzleNumber = Math.floor(this.now / 86400000) - 19115
   constructor(
     private searchService: SearchService, private modalService: NgbModal
   ) { }
