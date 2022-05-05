@@ -32,7 +32,6 @@ export class GameComponent implements OnInit {
       this.searchService.dataEntries = posts
       this.resetPosts = posts
       this.answer = getDailyAnswer()
-      console.log(this.answer)
       if (localStorage.getItem('today') == null) {
         localStorage.clear()
         localStorage.setItem('today', today)
