@@ -63,11 +63,20 @@ export class GameComponent implements OnInit {
     this.won = false
     if (mode.tab.textLabel == "The Daily Puzzle") {
       this.answer = getDailyAnswer()
-      if (localStorage.getItem("dailyArr") != null) {
-        this.post = JSON.parse(localStorage.getItem("dailyArr") as string)
-        this.checkVictory()
-      } else {
+      const now = Date.now()
+      const today = Math.floor(now / 86400000) as unknown as string
+      if (localStorage.getItem('today') == null) {
+        localStorage.clear()
+        localStorage.setItem('today', today)
         this.post = []
+      } else {
+        if (localStorage.getItem("dailyArr") != null && localStorage.getItem("today") != null && (localStorage.getItem('today') as string == today)) {
+          this.post = JSON.parse(localStorage.getItem("dailyArr") as string)
+        } else {
+          localStorage.clear()
+          localStorage.setItem('today', today)
+          this.post = []
+        }
       }
     } else if (mode.tab.textLabel == "Free Play") {
       this.answer = this.searchService.dataEntries[Math.floor(Math.random() * this.searchService.dataEntries.length)]
