@@ -78,6 +78,7 @@ export class GameComponent implements OnInit {
           this.post = []
         }
       }
+      this.checkVictory()
     } else if (mode.tab.textLabel == "Free Play") {
       this.answer = this.searchService.dataEntries[Math.floor(Math.random() * this.searchService.dataEntries.length)]
       this.post = []
