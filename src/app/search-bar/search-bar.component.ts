@@ -28,8 +28,6 @@ export class SearchBarComponent implements OnInit {
   ngOnInit() {
     this.searchService.getPosts().subscribe(posts => {
       this.searchService.allPosts = posts
-      console.log(posts)
-      console.log(this.searchService.searchOption)
     });
 
     this.myControl.valueChanges.subscribe(userInput => {
@@ -44,7 +42,6 @@ export class SearchBarComponent implements OnInit {
         this.searchService.allPosts = this.searchService.allPosts.filter(function(el) { return el.name != option.name; });
       }
     }
-    console.log(this.searchService.searchOption)
   }
 
   private autoCompleteExpenseList(input: any) {
@@ -80,8 +77,6 @@ export class SearchBarComponent implements OnInit {
   }
 
   filterPostList(event: any) {
-    console.log("filter post")
-    console.log(event.source.value)
     let posts = event.source.value;
     this.counter++
     posts.order = this.counter

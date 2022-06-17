@@ -35,7 +35,6 @@ export class GameComponent implements OnInit {
       this.searchService.dataEntries = posts
       this.resetPosts = posts
       this.answer = getDailyAnswer()
-      console.log("Hello world")
       if (localStorage.getItem('today') == null) {
         localStorage.clear()
         localStorage.setItem('today', today)
@@ -49,13 +48,10 @@ export class GameComponent implements OnInit {
         }
       }
       this.checkVictory()
-      console.log(this.post)
     });
   }
 
   onSelectedOption(e: any) {
-    console.log(this.post)
-    console.log(e)
     this.post = sortArray(e)
     if (this.gameMode == "The Daily Puzzle") {
       localStorage.setItem("dailyArr", JSON.stringify(this.post))
@@ -91,7 +87,6 @@ export class GameComponent implements OnInit {
       this.post = []
     }
     this.searchService.searchOption = this.post
-    console.log(this.searchService.searchOption)
     this.searchService.allPosts = this.resetPosts
     for (let option of this.post) {
         this.searchService.allPosts = this.searchService.allPosts.filter(function(el) { return el.name != option.name; });
