@@ -23,6 +23,7 @@ export class GameComponent implements OnInit {
   answer: Post = {name: "", area: "", kills: 0, health: 0, geo: 0, alias: [""], order: -1}
   now = Date.now()
   puzzleNumber = Math.floor(this.now / 86400000) - 19115
+  hardMode = false;
   constructor(
     private searchService: SearchService, private modalService: NgbModal
   ) { }
@@ -34,22 +35,27 @@ export class GameComponent implements OnInit {
       this.searchService.dataEntries = posts
       this.resetPosts = posts
       this.answer = getDailyAnswer()
+      console.log("Hello world")
       if (localStorage.getItem('today') == null) {
         localStorage.clear()
         localStorage.setItem('today', today)
       } else {
         if (localStorage.getItem("dailyArr") != null && localStorage.getItem("today") != null && (localStorage.getItem('today') as string == today)) {
           this.post = JSON.parse(localStorage.getItem("dailyArr") as string)
+          this.hardMode = localStorage.getItem('hardMode') == 'true'
         } else {
           localStorage.clear()
           localStorage.setItem('today', today)
         }
       }
       this.checkVictory()
+      console.log(this.post)
     });
   }
 
   onSelectedOption(e: any) {
+    console.log(this.post)
+    console.log(e)
     this.post = sortArray(e)
     if (this.gameMode == "The Daily Puzzle") {
       localStorage.setItem("dailyArr", JSON.stringify(this.post))
@@ -72,6 +78,7 @@ export class GameComponent implements OnInit {
       } else {
         if (localStorage.getItem("dailyArr") != null && localStorage.getItem("today") != null && (localStorage.getItem('today') as string == today)) {
           this.post = JSON.parse(localStorage.getItem("dailyArr") as string)
+          this.hardMode = localStorage.getItem('hardMode') == 'true'
         } else {
           localStorage.clear()
           localStorage.setItem('today', today)
@@ -84,6 +91,7 @@ export class GameComponent implements OnInit {
       this.post = []
     }
     this.searchService.searchOption = this.post
+    console.log(this.searchService.searchOption)
     this.searchService.allPosts = this.resetPosts
     for (let option of this.post) {
         this.searchService.allPosts = this.searchService.allPosts.filter(function(el) { return el.name != option.name; });
@@ -114,5 +122,11 @@ export class GameComponent implements OnInit {
 
   openInst() {
     openInstructions(this.modalService)
+  }
+
+  updateLocalVar() {
+    if (this.gameMode == "The Daily Puzzle") {
+      localStorage.setItem('hardMode', this.hardMode.toString())
+    }
   }
 }

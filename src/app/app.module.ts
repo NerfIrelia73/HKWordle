@@ -14,6 +14,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox'
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -78,6 +79,7 @@ const analytics = getAnalytics(app);
     MatSelectModule,
     MatTabsModule,
     MatButtonModule,
+    MatCheckboxModule,
     RouterModule.forRoot([
       {path: '', component: HomePageComponent},
       {path: 'game', component: GameComponent},

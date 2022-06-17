@@ -69,7 +69,7 @@
           "kills": 15,
           "health": 30,
           "geo": 17,
-          "alias": [""],
+          "alias": ["Infected Husk"],
           "order": -1
         },
         {
@@ -173,7 +173,7 @@
         },
         {
           "name": "Wandering Husk",
-          "area": "Forgotten Crossroads",
+          "area": "Multiple",
           "kills": 35,
           "health": 15,
           "geo": 3,
@@ -321,7 +321,7 @@
           "kills": 15,
           "health": 40,
           "geo": 20,
-          "alias": [""],
+          "alias": ["Infected Vengefly"],
           "order": -1
         },
         {
@@ -398,7 +398,7 @@
         },
         {
           "name": "Leaping Husk",
-          "area": "Forgotten Crossroads",
+          "area": "Multiple",
           "kills": 35,
           "health": 15,
           "geo": 3,
@@ -668,7 +668,7 @@
         },
         {
           "name": "Baldur",
-          "area": "Greenpath",
+          "area": "Multiple",
           "kills": 20,
           "health": 15,
           "geo": 4,
@@ -690,7 +690,7 @@
           "kills": 15,
           "health": 40,
           "geo": 15,
-          "alias": [""],
+          "alias": ["Infected Gruzzer"],
           "order": -1
         },
         {
@@ -749,7 +749,7 @@
         },
         {
           "name": "Belfly",
-          "area": "City of Tears",
+          "area": "Multiple",
           "kills": 15,
           "health": 5,
           "geo": 0,
@@ -776,7 +776,7 @@
         },
         {
           "name": "Crawlid",
-          "area": "Forgotten Crossroads",
+          "area": "Multiple",
           "kills": 0,
           "health": 8,
           "geo": 2,
@@ -834,7 +834,7 @@
           "kills": 30,
           "health": 25,
           "geo": 12,
-          "alias": [""],
+          "alias": ["Rava"],
           "order": -1
         },
         {
@@ -902,7 +902,7 @@
         },
         {
           "name": "Vengefly",
-          "area": "Forgotten Crossroads",
+          "area": "Multiple",
           "kills": 45,
           "health": 8,
           "geo": 3,
@@ -1001,7 +1001,7 @@
         },
         {
           "name": "Elder Baldur",
-          "area": "Greenpath",
+          "area": "Multiple",
           "kills": 1,
           "health": 60,
           "geo": 50,
@@ -1010,7 +1010,7 @@
         },
         {
           "name": "Husk Bully",
-          "area": "Forgotten Crossroads",
+          "area": "Multiple",
           "kills": 35,
           "health": 15,
           "geo": 3,
@@ -1041,7 +1041,7 @@
           "kills": 25,
           "health": 25,
           "geo": 12,
-          "alias": [""],
+          "alias": ["Rava"],
           "order": -1
         },
         {
@@ -1082,7 +1082,7 @@
         },
         {
           "name": "Tiktik",
-          "area": "Forgotten Crossroads",
+          "area": "Multiple",
           "kills": 30,
           "health": 8,
           "geo": 2,
@@ -1181,7 +1181,7 @@
         },
         {
           "name": "Fool Eater",
-          "area": "Greenpath",
+          "area": "Multiple",
           "kills": 15,
           "health": 16,
           "geo": 9,
@@ -1217,7 +1217,7 @@
         },
         {
           "name": "Aspid Hunter",
-          "area": "Forgotten Crossroads",
+          "area": "Multiple",
           "kills": 20,
           "health": 15,
           "geo": 6,
@@ -1226,7 +1226,7 @@
         },
         {
           "name": "Husk Hornhead",
-          "area": "Forgotten Crossroads",
+          "area": "Multiple",
           "kills": 35,
           "health": 15,
           "geo": 4,
@@ -1374,7 +1374,7 @@
           "kills": 15,
           "health": 40,
           "geo": 15,
-          "alias": [""],
+          "alias": ["Infected Husk"],
           "order": -1
         },
         {
@@ -1401,7 +1401,7 @@
           "kills": 2,
           "health": 300,
           "geo": 200,
-          "alias": [""],
+          "alias": ["Norman"],
           "order": -1
         },
         {

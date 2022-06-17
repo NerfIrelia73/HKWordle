@@ -39,6 +39,21 @@
     flex-wrap: wrap;
 }
 
+.hardModeContainer {
+    display: flex;
+    width: 50%;
+    float: right;
+    flex-wrap: wrap;
+}
+
+.hardMode {
+    margin: 0 10px;
+  }
+
+::ng-deep .mat-checkbox-label {
+    color: white;
+}
+
 .entryContainer {
     margin-right: 10px;
     margin-left: 10px;

@@ -11,6 +11,9 @@
 <div style="display: flex; justify-content: center;">
   <button *ngIf="gameMode == 'Free Play' && (won || (!won && post.length == 8))" mat-raised-button color="primary" style="margin-bottom: 20px;" (click)="goAgain()">Play Again</button>
 </div>
+<div class="hardModeContainer">
+  <mat-checkbox class="example-margin" (change)="updateLocalVar()" [(ngModel)]="hardMode" [disabled]="post.length > 0">Hard Mode</mat-checkbox>
+</div>
 <div class="gameContainer">
     <div class="entryContainer" style="color: black; display: block;">
         <div *ngFor="let option of post" style="height: 107px; line-height: normal; border: 1px solid black; padding: 0px; margin-bottom: 20px;">
@@ -41,6 +44,6 @@
         </div>
     </div>
     <div class="entryContainer">
-        <app-search-bar [wonGame]="won" [listLength]="post.length" (onSelectedOption)="onSelectedOption($event)"></app-search-bar>
+        <app-search-bar [wonGame]="won" [listLength]="post.length" [hardMode]="hardMode" (onSelectedOption)="onSelectedOption($event)"></app-search-bar>
     </div>
 </div>

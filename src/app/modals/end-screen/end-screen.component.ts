@@ -40,7 +40,7 @@ export class EndScreenComponent implements OnInit {
     if (this.won) {
       text = `I solved Hunter's Journle #${Math.floor(now / 86400000) - 19115} in ${this.guesses.length} guesses!\n\n`
     } else {
-      text = "I was unable to solve today's Hunter's Journle\n\n"
+      text = `I was unable to solve Hunter's Journle #${Math.floor(now / 86400000) - 19115}\n\n`
     }
     for (let i = 0; i < this.guesses.length; i++) {
       if (longest < this.guesses[i].name.length) {

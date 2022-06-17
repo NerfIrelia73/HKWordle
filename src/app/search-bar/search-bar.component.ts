@@ -19,6 +19,7 @@ export class SearchBarComponent implements OnInit {
   @Output() onSelectedOption = new EventEmitter();
   @Input() public wonGame: any
   @Input() public listLength: any
+  @Input() public hardMode: any
 
   constructor(
     public searchService: SearchService
@@ -27,6 +28,8 @@ export class SearchBarComponent implements OnInit {
   ngOnInit() {
     this.searchService.getPosts().subscribe(posts => {
       this.searchService.allPosts = posts
+      console.log(posts)
+      console.log(this.searchService.searchOption)
     });
 
     this.myControl.valueChanges.subscribe(userInput => {
@@ -35,10 +38,13 @@ export class SearchBarComponent implements OnInit {
 
     if (localStorage.getItem("dailyArr") != null) {
       this.dailyPosts = JSON.parse(localStorage.getItem("dailyArr") as string)
+      this.searchService.searchOption = this.dailyPosts
+      this.counter = this.dailyPosts.length
       for (let option of this.dailyPosts) {
         this.searchService.allPosts = this.searchService.allPosts.filter(function(el) { return el.name != option.name; });
       }
     }
+    console.log(this.searchService.searchOption)
   }
 
   private autoCompleteExpenseList(input: any) {
@@ -74,6 +80,8 @@ export class SearchBarComponent implements OnInit {
   }
 
   filterPostList(event: any) {
+    console.log("filter post")
+    console.log(event.source.value)
     let posts = event.source.value;
     this.counter++
     posts.order = this.counter
