@@ -49,9 +49,9 @@ export class EndScreenComponent implements OnInit {
     }
     for (let i = this.guesses.length - 1; i >= 0; i--) {
       if (this.guesses[i].area == this.answer.area) {
-        text += ":green_square:"
+        text += "🟩"
       } else {
-        text += ":black_large_square:"
+        text += "⬛️"
       }
 
       if (this.guesses[i].kills == this.answer.kills) {
