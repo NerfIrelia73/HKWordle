@@ -25,8 +25,8 @@ export class SearchBarComponent implements OnInit {
     public searchService: SearchService
   ) { }
 
-  ngOnInit() {
-    this.searchService.getPosts().subscribe(posts => {
+  async ngOnInit() {
+    (await this.searchService.getPosts()).subscribe(posts => {
       this.searchService.allPosts = posts
     });
 

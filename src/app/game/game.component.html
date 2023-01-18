@@ -2,6 +2,9 @@
 <div style="position: absolute; top: 0; right: 0; margin-top: 95px; width: 250px; display: flex; flex-wrap: wrap; justify-content: center;">
   <span style="color: rgb(59, 206, 255); font-size: 20px;">Created by NerfIrelia73</span>
   <span style="color: rgb(59, 206, 255); font-size: 20px; cursor: pointer;"><a href="https://github.com/NerfIrelia73/HKWordle" target="_blank">Github Project</a></span>
+  <span style="width: 125px; display: flex; justify-content: center;">
+    <img aria-hidden [src]="'https://HuntersJournlePullZone.b-cdn.net/SchyGuy.png'" height="50" />
+  </span>
 </div>
 <div style="display: flex; justify-content: center;">
   <h3 class="gameTitle">{{ gameMode }}</h3>
@@ -22,7 +25,7 @@
             </div>
             <div style="display: flex; justify-content: center;">
               <div style="width: 20%; display: flex; justify-content: center;">
-                <img style="vertical-align: middle;" aria-hidden [src]="'../../assets/entry-images/' + option.name + '.webp'" height="85" />
+                <img style="vertical-align: middle;" aria-hidden [src]="option.url" height="85" />
               </div>
               <div class="option" [ngStyle]="{'background-color': option.area == answer.area ? 'green' : 'red'}">
                 <span><strong>Area</strong></span><br>

@@ -9,7 +9,7 @@ export const sortArray = function(e: Post[]) {
     return e
 }
 
-export const openEndScreen = function(check: boolean, modalService: NgbModal, post: Post[], answer: Post, mode: string) {
+export const openEndScreen = function(check: boolean, modalService: NgbModal, post: Post[], answer: Post, mode: string, hardMode: boolean) {
     const modalRef = modalService.open(EndScreenComponent, {
       size: 'l',
       centered: true,
@@ -19,6 +19,7 @@ export const openEndScreen = function(check: boolean, modalService: NgbModal, po
     modalRef.componentInstance.won = check;
     modalRef.componentInstance.answer = answer;
     modalRef.componentInstance.mode = mode;
+    modalRef.componentInstance.hardMode = hardMode;
 }
 
 export const openInstructions = function(modalService: any) {

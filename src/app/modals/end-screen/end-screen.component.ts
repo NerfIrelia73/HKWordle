@@ -15,6 +15,7 @@ export class EndScreenComponent implements OnInit {
   @Input() public won: any;
   @Input() public answer: any;
   @Input() public mode: any;
+  @Input() public hardMode: any;
 
   ngOnInit(): void {
   }
@@ -38,9 +39,9 @@ export class EndScreenComponent implements OnInit {
     let text = ""
     let longest = 0
     if (this.won) {
-      text = `I solved Hunter's Journle #${Math.floor(now / 86400000) - 19115} in ${this.guesses.length} guesses!\n\n`
+      text = `I solved Hunter's Journle #${Math.floor(now / 86400000) - 19115} in ${this.guesses.length} guesses${this.hardMode ? ' :star2: **on Hard Mode!** :star2:': '!'}\n\n`
     } else {
-      text = `I was unable to solve Hunter's Journle #${Math.floor(now / 86400000) - 19115}\n\n`
+      text = `I was unable to solve Hunter's Journle #${Math.floor(now / 86400000) - 19115}${this.hardMode ? ' :star2: **on Hard Mode** :star2:': ''}\n\n`
     }
     for (let i = 0; i < this.guesses.length; i++) {
       if (longest < this.guesses[i].name.length) {
@@ -49,30 +50,30 @@ export class EndScreenComponent implements OnInit {
     }
     for (let i = this.guesses.length - 1; i >= 0; i--) {
       if (this.guesses[i].area == this.answer.area) {
-        text += ":green_square:"
+        text += ":blue_heart:" //(this.hardMode ? ":star2:" : ":green_square:")
       } else {
         text += ":black_large_square:"
       }
 
       if (this.guesses[i].kills == this.answer.kills) {
-        text += ":green_square:"
+        text += ":blue_heart:" //(this.hardMode ? ":star2:" : ":green_square:")
       } else {
         text += ":black_large_square:"
       }
 
       if (this.guesses[i].health == this.answer.health) {
-        text += ":green_square:"
+        text += ":blue_heart:" //(this.hardMode ? ":star2:" : ":green_square:")
       } else {
         text += ":black_large_square:"
       }
 
       if (this.guesses[i].geo == this.answer.geo) {
-        text += ":green_square:"
+        text += ":blue_heart:" //(this.hardMode ? ":star2:" : ":green_square:")
       } else {
         text += ":black_large_square:"
       }
       text += ` ||${this.guesses[i].name}`
-      text += ' '.repeat(longest - this.guesses[i].name.length) + "||\n"
+      text += ' '.repeat(longest - this.guesses[i].name.length + 10) + "||\n"
     }
     text += "\nTry it yourself at https://hunters-journle.web.app/"
     return text

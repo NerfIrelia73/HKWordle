@@ -3,18 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
-import { MatIconModule } from '@angular/material/icon'
 import { MatInputModule } from '@angular/material/input'
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
-import { MatChipsModule } from '@angular/material/chips'
 import { MatFormFieldModule } from '@angular/material/form-field'
-import { MatDividerModule } from '@angular/material/divider'
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatSelectModule } from '@angular/material/select';
-import { MatTabsModule } from '@angular/material/tabs';
+import { MatChipsModule } from '@angular/material/chips'
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox'
+import { MatTabsModule } from '@angular/material/tabs'
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -30,7 +25,6 @@ import { CopiedComponent } from './modals/copied/copied.component';
 import { TopNavbarComponent } from './top-navbar/top-navbar.component';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -48,7 +42,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 @NgModule({
   declarations: [
@@ -66,20 +59,15 @@ const analytics = getAnalytics(app);
     FormsModule,
     FontAwesomeModule,
     NgbModule,
-    HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatIconModule,
     MatAutocompleteModule,
-    MatChipsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatDividerModule,
-    MatGridListModule,
-    MatSelectModule,
-    MatTabsModule,
     MatButtonModule,
+    MatChipsModule,
     MatCheckboxModule,
+    MatTabsModule,
     RouterModule.forRoot([
       {path: '', component: HomePageComponent},
       {path: 'game', component: GameComponent},
