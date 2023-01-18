@@ -5,5 +5,6 @@ export interface Post {
     health: number,
     geo: number,
     alias: string[],
+    url: string,
     order: number
 }

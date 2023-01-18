@@ -1,5 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-import { FormControl } from '@angular/forms'
+import { UntypedFormControl } from '@angular/forms'
 import { SearchService } from '../search.service';
 import { Post } from '../post'
 
@@ -9,7 +9,7 @@ import { Post } from '../post'
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
-  myControl = new FormControl()
+  myControl = new UntypedFormControl()
   dailyPosts: Post[] = []
   autoCompleteList: any[] = []
   counter = 0
@@ -19,13 +19,14 @@ export class SearchBarComponent implements OnInit {
   @Output() onSelectedOption = new EventEmitter();
   @Input() public wonGame: any
   @Input() public listLength: any
+  @Input() public hardMode: any
 
   constructor(
     public searchService: SearchService
   ) { }
 
-  ngOnInit() {
-    this.searchService.getPosts().subscribe(posts => {
+  async ngOnInit() {
+    (await this.searchService.getPosts()).subscribe(posts => {
       this.searchService.allPosts = posts
     });
 
@@ -35,6 +36,8 @@ export class SearchBarComponent implements OnInit {
 
     if (localStorage.getItem("dailyArr") != null) {
       this.dailyPosts = JSON.parse(localStorage.getItem("dailyArr") as string)
+      this.searchService.searchOption = this.dailyPosts
+      this.counter = this.dailyPosts.length
       for (let option of this.dailyPosts) {
         this.searchService.allPosts = this.searchService.allPosts.filter(function(el) { return el.name != option.name; });
       }

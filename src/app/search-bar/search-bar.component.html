@@ -10,23 +10,23 @@
           </div>
           <div style="display: flex; justify-content: center;">
             <div style="width: 20%; display: flex; justify-content: center;">
-              <img aria-hidden [src]="'../../assets/entry-images/' + option.name + '.webp'" height="75" />
+              <img aria-hidden [src]="option.url" height="75" />
             </div>
             <div class="option">
               <span><strong>Area</strong></span><br>
-              <span class="infoSpan">{{ option.area }}</span>
+              <span class="infoSpan">{{ hardMode ? '-' : option.area }}</span>
             </div>
             <div class="option">
               <span><strong>Kills</strong></span><br>
-              <span class="infoSpan">{{ option.kills }}</span>
+              <span class="infoSpan">{{ hardMode ? '-' : option.kills }}</span>
             </div>
             <div class="option">
               <span><strong>Health</strong></span><br>
-              <span class="infoSpan">{{ option.health }}</span>
+              <span class="infoSpan">{{ hardMode ? '-' : option.health }}</span>
             </div>
             <div class="option">
               <span><strong>Geo</strong></span><br>
-              <span class="infoSpan">{{ option.geo }}</span>
+              <span class="infoSpan">{{ hardMode ? '-' : option.geo }}</span>
             </div>
           </div>
         </mat-option>

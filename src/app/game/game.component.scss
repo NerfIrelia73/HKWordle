@@ -31,3 +31,42 @@
     font-size: 40px;
     margin-right: 10px;
 }
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.hardModeContainer {
+    display: flex;
+    width: 50%;
+    float: right;
+    flex-wrap: wrap;
+}
+
+.hardMode {
+    margin: 0 10px;
+  }
+
+::ng-deep .mat-checkbox-label {
+    color: white;
+}
+
+.entryContainer {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 40%;
+    min-width: 380px;
+}
+
+@media only screen and (max-width: 800px) {
+    .gameContainer {
+        flex-direction: column-reverse;
+    }
+
+    .entryContainer {
+        width: 95%;
+    }
+  }

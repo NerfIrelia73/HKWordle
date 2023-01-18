@@ -20,15 +20,16 @@ export class GameComponent implements OnInit {
   resetPosts: Post[] = []
   won = false;
   post: Post[] = []
-  answer: Post = {name: "", area: "", kills: 0, health: 0, geo: 0, alias: [""], order: -1}
+  answer: Post = {name: "", area: "", kills: 0, health: 0, geo: 0, alias: [""], url: "", order: -1}
   now = Date.now()
   puzzleNumber = Math.floor(this.now / 86400000) - 19115
+  hardMode = false;
   constructor(
     private searchService: SearchService, private modalService: NgbModal
   ) { }
 
-  ngOnInit() {
-    this.searchService.getPosts().subscribe((posts: Post[]) => {
+  async ngOnInit() {
+    (await this.searchService.getPosts()).subscribe((posts: Post[]) => {
       const now = Date.now()
       const today = Math.floor(now / 86400000) as unknown as string
       this.searchService.dataEntries = posts
@@ -40,6 +41,7 @@ export class GameComponent implements OnInit {
       } else {
         if (localStorage.getItem("dailyArr") != null && localStorage.getItem("today") != null && (localStorage.getItem('today') as string == today)) {
           this.post = JSON.parse(localStorage.getItem("dailyArr") as string)
+          this.hardMode = localStorage.getItem('hardMode') == 'true'
         } else {
           localStorage.clear()
           localStorage.setItem('today', today)
@@ -72,6 +74,7 @@ export class GameComponent implements OnInit {
       } else {
         if (localStorage.getItem("dailyArr") != null && localStorage.getItem("today") != null && (localStorage.getItem('today') as string == today)) {
           this.post = JSON.parse(localStorage.getItem("dailyArr") as string)
+          this.hardMode = localStorage.getItem('hardMode') == 'true'
         } else {
           localStorage.clear()
           localStorage.setItem('today', today)
@@ -98,9 +101,9 @@ export class GameComponent implements OnInit {
       }
     }
     if (this.won) {
-      openEndScreen(true, this.modalService, this.post, this.answer, this.gameMode)
+      openEndScreen(true, this.modalService, this.post, this.answer, this.gameMode, this.hardMode)
     } else if (this.post.length == 8) {
-      openEndScreen(false, this.modalService, this.post, this.answer, this.gameMode)
+      openEndScreen(false, this.modalService, this.post, this.answer, this.gameMode, this.hardMode)
     }
   }
 
@@ -114,5 +117,11 @@ export class GameComponent implements OnInit {
 
   openInst() {
     openInstructions(this.modalService)
+  }
+
+  updateLocalVar() {
+    if (this.gameMode == "The Daily Puzzle") {
+      localStorage.setItem('hardMode', this.hardMode.toString())
+    }
   }
 }
