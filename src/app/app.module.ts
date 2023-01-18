@@ -23,6 +23,7 @@ import { SearchService } from './search.service';
 import { EndScreenComponent } from './modals/end-screen/end-screen.component';
 import { CopiedComponent } from './modals/copied/copied.component';
 import { TopNavbarComponent } from './top-navbar/top-navbar.component';
+import { firebaseData } from '../environments/environment'
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -30,15 +31,7 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyAKCxE3MBuibmYTMtFUvIxUc-qmx20VlVk",
-  authDomain: "hunters-journle.firebaseapp.com",
-  projectId: "hunters-journle",
-  storageBucket: "hunters-journle.appspot.com",
-  messagingSenderId: "944274708393",
-  appId: "1:944274708393:web:4f4f3a8bbf07db159696b8",
-  measurementId: "G-W3R4TBKSXD"
-};
+const firebaseConfig = firebaseData
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
