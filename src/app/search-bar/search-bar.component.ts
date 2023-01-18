@@ -1,5 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-import { FormControl } from '@angular/forms'
+import { UntypedFormControl } from '@angular/forms'
 import { SearchService } from '../search.service';
 import { Post } from '../post'
 
@@ -9,7 +9,7 @@ import { Post } from '../post'
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
-  myControl = new FormControl()
+  myControl = new UntypedFormControl()
   dailyPosts: Post[] = []
   autoCompleteList: any[] = []
   counter = 0
