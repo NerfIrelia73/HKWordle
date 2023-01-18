@@ -52,7 +52,7 @@ export class EndScreenComponent implements OnInit {
       if (this.guesses[i].area == this.answer.area) {
         text += "🟩" //(this.hardMode ? ":star2:" : ":green_square:")
       } else {
-        text += "⬛" //These two look the same, but they aren't lol
+        text += "⬛"
       }
 
       if (this.guesses[i].kills == this.answer.kills) {
