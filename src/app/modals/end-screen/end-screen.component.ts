@@ -75,7 +75,7 @@ export class EndScreenComponent implements OnInit {
       text += ` ||${this.guesses[i].name}`
       text += ' '.repeat(longest - this.guesses[i].name.length + 10) + "||\n"
     }
-    text += "\nTry it yourself at https://hunters-journle.web.app/"
+    text += "\nTry it yourself at https://hunters-journle.web.app\n#HunerJournleWordle"
     return text
   }
 
